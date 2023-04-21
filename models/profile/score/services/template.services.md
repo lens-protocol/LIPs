@@ -6,7 +6,7 @@ Please fill in the details below to create your Model Service Metadata. This wil
 
 Enter a unique identifier for your model service in the format `{entity}_{personal/global}_{developer}_{model_name}_{version_number}`.
 
-Example: `profile_global_lens_ranking_2`
+Example: `profile_global_lens_score_2`
 
 ## Model Description
 
