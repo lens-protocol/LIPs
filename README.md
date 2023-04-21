@@ -74,4 +74,4 @@ If you wish to learn how you can contribute to these standards, please follow th
 
 ### LENS API integration
 
-If you're interested in integrating the Lens API with your service, please contact a team member who can assist you and provide API-specific documentation. Our focus here is on the Lens ML Open Standards, rather than the API itself.
+If you're interested in integrating the Lens API with your service, please contact a team member who can assist you and provide API-specific documentation but overall its a requirement to have this merged in before that conversation can happen. Our focus here is on the Lens ML Open Standards, rather than the API itself.
