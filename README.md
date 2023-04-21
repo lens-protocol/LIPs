@@ -67,3 +67,7 @@ The service metadata should be based on model card and include the following inf
 Currently, the standards support only JSON or JSON Lines as data output formats. We will not be supporting API endpoint calls at this time, due to concerns related to TCP connections, downtime, and data retrieval speed. Additionally, we do not want to require participants to host their APIs to comply with the standard. The location for saving this data is specified within the service metadata.
 
 The model itself sets the maximum constraints for array sizes and file sizes for data output. This ensures that the output data remains manageable and can be easily consumed by APIs/Apps.
+
+### Contributing
+
+If you wish to learn how you can contribute to these standards, please follow the guidelines here [contributing.md](./contributing.md).
