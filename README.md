@@ -71,3 +71,7 @@ The model itself sets the maximum constraints for array sizes and file sizes for
 ### Contributing
 
 If you wish to learn how you can contribute to these standards, please follow the guidelines here [contributing.md](./contributing.md).
+
+### LENS API integration
+
+If you're interested in integrating the Lens API with your service, please contact a team member who can assist you and provide API-specific documentation. Our focus here is on the Lens ML Open Standards, rather than the API itself.
