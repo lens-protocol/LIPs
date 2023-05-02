@@ -8,11 +8,13 @@
 
 This model provides EigenTrust-based global trust scores for profiles.
 
-### EigenTrust Peers
+### EigenTrust Input
+
+#### Peers
 
 We treat each profile as a peer.
 
-### Local Trust
+#### Local Trust
 
 Between two profiles A and B, the local trust from A to B is defined as:
 
@@ -23,18 +25,30 @@ Between two profiles A and B, the local trust from A to B is defined as:
 Since a follow is from an address to a profile,
 we convert the address of a follow to the primary profile of the address.
 
-### Pre-Trust
+#### Pre-Trust
 
 We place uniform pre-trust (used as both initial trust and trust bias)
 for the hand-curated list of 10 profiles:
 
-- TODO(ek) fill this in
-
-### Alpha (pre-trust bias strength)
+```
+   id   |       handle        
+--------+---------------------
+  73557 | chriscomrie.lens
+   3297 | levychain.lens
+      5 | stani.lens
+     36 | bradorbradley.lens
+   4231 | cristinaspinei.lens
+  89805 | goodkrak.lens
+ 105878 | jamesfinnerty.lens
+  90724 | ryanfox.lens
+    142 | christina.lens
+  36284 | blackdave.lens
+```
+#### Alpha (pre-trust bias strength)
 
 0.5
 
-### EigenTrust Convergence Criteria
+#### Convergence Criteria
 
 Full ranking stability (flat-tail) for two iterations.
 
