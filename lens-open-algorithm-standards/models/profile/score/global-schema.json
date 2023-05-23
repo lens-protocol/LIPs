@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          {
+            "type": "string",
+            "pattern": "^0x[0-9a-fA-F]+$"
+          },
+          {
+            "type": "string",
+            "pattern": "^-?[0-9]+(.[0-9]+)?$"
+          }
+        ]
+      }
+    },
+    "next": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": ["results", "next"]
+}
