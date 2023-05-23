@@ -1,3 +1,5 @@
+Use this template to do a PR to add a new model to the standards.
+
 # Model
 
 ## Name
