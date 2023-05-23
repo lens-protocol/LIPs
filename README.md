@@ -1,10 +1,10 @@
-# Lens ML open standards
+# Lens Open Algorithm Standard
 
-The rapid growth and development of lens ML systems have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming conventions, entities, service requirements, metadata, and data output, as outlined above, we can streamline the process of integrating various lens ML models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the lens ML community. By adopting and adhering to these open standards, we can accelerate progress in lens ML and unlock its full potential to benefit various industries and applications across the ecosystem.
+The rapid growth and development of Lens algorithmic systems including ML have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming algorithm-specific conventions, entities, service requirements, metadata, and data output, as outlined above, the Lens community can streamline the process of integrating various Lens algorithms, ML models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the Lens data sicence community. By adopting and adhering to these open standards, the community can accelerate progress in Lens data science and ML to unlock its full potential to benefit from various industries and applications across the ecosystem.
 
 ## Specification
 
-### Naming conventions
+### Naming Conventions
 
 When defining a new machine learning (ML) standard, adhere to the following naming conventions:
 
@@ -35,9 +35,9 @@ Each approved ML open standard model must have a clearly defined service data ou
 
 Additionally, the data output should utilize a tuple-style format when possible to minimize wasted space caused by repeated object names. It is also required that you write the spec using json schema to make it easy for all to read.
 
-### Model service requirements and constraints
+### Model Service Requirements and Constraints
 
-Each model within the standards must adhere to a set of predefined requirements or rules. These rules, such as "updates are allowed only every 3 hours," establish constraints that the model should follow. Indexer services can also enforce these constraints to ensure optimal performance. For example, by defining the service requirements, you can prevent excessive requests that could potentially overload the system, such as requests made every second.
+Each model within the standards must adhere to a set of predefined requirements or rules. These rules, such as "updates are allowed only every 3 hours," establish ceiling constraints that the model should follow. Indexer services can also enforce these constraints to ensure optimal performance and service level. For example, by defining the service requirements, you can prevent excessive requests that could potentially overload the system, such as requests made every second. Similarly service requirements can be enforced by setting a floor condition such as "update every 12 hours".
 
 ### Model Service Metadata
 
@@ -59,6 +59,7 @@ The service metadata should be based on model card and include the following inf
 - External website: optional
 - GitHub repository with the code: optional
 - Licenses: optional
+- Maintainer: optional (Lens profile ID/handle)
 - Global model data output location: not required if you got the personal model data output location
 - Personal model data output location: not required if you got the global model data output location
 
@@ -72,6 +73,6 @@ The model itself sets the maximum constraints for array sizes and file sizes for
 
 If you wish to learn how you can contribute to these standards, please follow the guidelines here [contributing.md](./contributing.md).
 
-### LENS API integration
+### Service Distribution
 
-If you're interested in integrating the Lens API with your service, please contact a team member who can assist you and provide API-specific documentation but overall its a requirement to have this merged in before that conversation can happen. Our focus here is on the Lens ML Open Standards, rather than the API itself.
+Services that are aligned with this standard can be integrated into reach layers and services such as the Lens API with the limit and expect that there are specific resources available for the integration and it provides general value for the Lens ecosystem. In such case, reach out to a Lens team member for assistance on API-specific documentation. Additionally there are third party services that might also be suitable for integrations or directly to existing Lens clients.
