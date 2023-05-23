@@ -16,6 +16,8 @@ Supported - `profile_global_score`
 
 ### Personal
 
+JSON schema can be found [here](./personal-schema.json) for usage in json validation.
+
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -93,6 +95,8 @@ If using JSONL you do not need the `next` field and the size rules below do not 
 - The maximum array of results in each page is 150,000.(this does not apply to .jsonl format)
 
 ### Global
+
+JSON schema can be found [here](./global-schema.json) for usage in json validation.
 
 ```json
 {
