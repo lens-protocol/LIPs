@@ -75,19 +75,19 @@ Will use all the fields but remember a lot are optional you can use the json sch
       "altTag": "My Video",
       "cover": "https://myimage.com",
       "duration": 100,
-      "license": "CCO",
+      "license": "CCO"
     },
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
         "altTag": "My Image",
-        "license": "CCO",
-      },
+        "license": "CCO"
+      }
     ],
-    "appId": "my-app-id",
-  },
-};
+    "appId": "my-app-id"
+  }
+}
 ```
 
 ## Short video
@@ -115,17 +115,17 @@ Must be under 2 minutes.
       "altTag": "My Video",
       "cover": "https://myimage.com",
       "duration": 100,
-      "license": "CCO",
+      "license": "CCO"
     },
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
         "altTag": "My Image",
-        "license": "CCO",
-      },
+        "license": "CCO"
+      }
     ],
-    "appId": "my-app-id",
-  },
-};
+    "appId": "my-app-id"
+  }
+}
 ```

@@ -76,17 +76,17 @@ Will use all the fields but remember a lot are optional you can use the json sch
       "credits": "My Credits",
       "artist": "My Artist",
       "genre": "My Genre",
-      "recordLabel": "My Record Label",
+      "recordLabel": "My Record Label"
     },
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
         "altTag": "My Image",
-        "license": "CCO",
-      },
+        "license": "CCO"
+      }
     ],
-    "appId": "my-app-id",
-  },
-};
+    "appId": "my-app-id"
+  }
+}
 ```
