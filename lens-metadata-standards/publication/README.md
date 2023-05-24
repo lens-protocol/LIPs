@@ -7,3 +7,5 @@ These standard defines the metadata for a publication. This includes `POST`, `CO
 ## Table of Contents
 
 - [Video metadata standards](./video/README.md)
+- [Audio metadata standards](./audio/README.md)
+- [Image metadata standards](./image/README.md)
