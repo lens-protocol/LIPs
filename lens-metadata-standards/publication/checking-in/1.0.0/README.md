@@ -1,4 +1,4 @@
-# Embed 1.0.0
+# Checking in 1.0.0
 
 ## JSON schema
 
@@ -16,28 +16,28 @@ References:
 - [MediaAudio](../../shared-ts-interfaces/media-audio.ts)
 
 ```ts
-interface EmbedMetadata extends MarketplaceMetadata {
+interface CheckingInMetadata extends MarketplaceMetadata {
   /**
-   * The JSON schema for the embed
+   * The JSON schema for the checking in
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/embed/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/checking-in/1.0.0/schema.json';
 
   /**
-   * The metadata details for the image
+   * The metadata details for the checking in
    */
-  lens: EmbedMetadataDetails;
+  lens: CheckingInMetadataDetails;
 }
 
-interface EmbedMetadataDetails extends MetadataCommon {
+interface CheckingInMetadataDetails extends MetadataCommon {
   /**
-   * The embed URL
+   * Where you checking in from
    */
-  embed: string;
+  location: string;
 
   /**
    * Main content focus that for this publication
    */
-  mainContentFocus: PublicationMainFocus.EMBED;
+  mainContentFocus: PublicationMainFocus.CHECKING_IN;
 
   /**
    * The other attachments you want to include with it
@@ -52,20 +52,20 @@ Will use all the fields but remember a lot are optional you can use the json sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/embed/1.0.0/schema.json",
-  "name": "My embed",
-  "description": "My embed Description",
-  "external_url": "https://mylink.com",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/checking-in/1.0.0/schema.json",
+  "name": "Me checking in",
+  "description": "Me checking in",
   "attributes": [],
-  "image": "https://mynftimage.com/image.png",
-  "animation_url": "https://myembed.com/embed.html",
+  "image": "https://myimage.com/image.png",
+  "external_url": "https://checking-in-link.com",
+  "attributes": [],
   "lens": {
     "id": "1234",
-    "embed": "https://embedlink.com",
-    "content": "My embed content",
+    "location": "AAVE office",
+    "content": "Just got into the office",
     "locale": "en-US",
-    "mainContentFocus": "EMBED",
-    "tags": ["embed"],
+    "mainContentFocus": "CHECKING_IN",
+    "tags": ["checking-in"],
     "attachments": [
       {
         "type": "PNG",
