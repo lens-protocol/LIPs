@@ -73,6 +73,8 @@ The model itself sets the maximum constraints for array sizes and file sizes for
 
 If you wish to learn how you can contribute to these standards, please follow the guidelines here [contributing.md](./contributing.md).
 
+If you just want to start a new discussion without core changes to the repo feel free to go to [discussions](https://github.com/lens-protocol/lens-standards/discussions)
+
 ### Service Distribution
 
 Services that are aligned with this standard can be integrated into reach layers and services such as the Lens API with the limit and expect that there are specific resources available for the integration and it provides general value for the Lens ecosystem. In such case, reach out to a Lens team member for assistance on API-specific documentation. Additionally there are third party services that might also be suitable for integrations or directly to existing Lens clients.
