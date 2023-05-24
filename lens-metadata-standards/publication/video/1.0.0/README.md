@@ -50,6 +50,8 @@ interface VideoMetadataDetails extends MetadataCommon {
 
 ## JSON example
 
+### Video
+
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
@@ -65,6 +67,57 @@ interface VideoMetadataDetails extends MetadataCommon {
     "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "VIDEO",
+    "content": "My Video Content", // optional
+    "tags": ["video"], // optional
+    "video": {
+      "type": "MP4",
+      "item": "https://myvideo.com",
+      "altTag": "My Video", // optional
+      "cover": "https://myimage.com", // optional
+      "duration": 100,  // optional
+      // means anyone can use it
+      // if you leave blank it also means anyone can use it
+      // you can also apply a proper license
+      "license": "CCO", // optional
+    },
+    // you can attach more media items as you wish
+    // you can add more videos in here as well any extra
+    // media items can go in here
+    "attachments": [
+      {
+        "type": "PNG",
+        "item": "https://myimage.com",
+        "altTag": "My Image", // optional
+        // means anyone can use it
+        // if you leave blank it also means anyone can use it
+        // you can also apply a proper license
+        "license": "CCO", // optional
+      },
+    ],
+    "appId": "my-app-id", // optional
+  },
+};
+```
+
+## Short video
+
+Must be under 2 minutes.
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
+  // start of marketplace fields - if its not tokenized no need to add these fields
+  "name": "My Video", // optional
+  "description": "My Video Description", // optional
+  "external_url": "https://myvideo.com", // optional
+  "attributes": [], // optional
+  "image": "https://myimage.com/image.png", // optional
+  "animation_url": "https://myvideo.com/video.mp4", // optional
+  // end of marketplace fields
+  "lens": {
+    "metadata_id": "1234",
+    "locale": "en-US",
+    "mainContentFocus": "SHORT_VIDEO",
     "content": "My Video Content", // optional
     "tags": ["video"], // optional
     "video": {
