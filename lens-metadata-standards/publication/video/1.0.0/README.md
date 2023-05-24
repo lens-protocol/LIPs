@@ -44,7 +44,7 @@ interface VideoMetadataDetails extends MetadataCommon {
   /**
    * The other attachments you want to include with it
    */
-  attachments: (MediaImage | MediaVideo | MediaAudio)[];
+  attachments?: (MediaImage | MediaVideo | MediaAudio)[];
 }
 ```
 
