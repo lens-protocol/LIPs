@@ -365,6 +365,9 @@
             "type": "uri"
           }
         },
+        "mainContentFocus": {
+          "enum": ["EVENT"]
+        },
         "attachments": {
           "type": "array",
           "items": {
