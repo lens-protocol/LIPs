@@ -1,0 +1,338 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "description": {
+      "type": "string"
+    },
+    "external_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string"
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "displayType": {
+            "enum": ["number", "string", "date"]
+          },
+          "traitType": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": ["value"]
+      }
+    },
+    "image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "animation_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "lens": {
+      "$ref": "#/definitions/TextOnlyMetadataDetails"
+    }
+  },
+  "required": ["$schema", "lens"],
+  "definitions": {
+    "MediaVideo": {
+      "type": "object",
+      "properties": {
+        "item": {
+          "type": "string",
+          "format": "uri"
+        },
+        "altTag": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "model/gltf+json",
+            "model/gltf-binary",
+            "video/webm",
+            "video/mp4",
+            "video/x-m4v",
+            "video/ogv",
+            "video/ogg",
+            "video/mpeg",
+            "video/quicktime"
+          ]
+        },
+        "cover": {
+          "type": "string",
+          "format": "uri"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "license": {
+          "enum": [
+            "CCO",
+            "CC BY",
+            "CC BY-ND",
+            "CC BY-NC",
+            "TBNL-C-D-PL-Legal",
+            "TBNL-C-DT-PL-Legal",
+            "TBNL-C-ND-PL-Legal",
+            "TBNL-C-D-NPL-Legal",
+            "TBNL-C-DT-NPL-Legal",
+            "TBNL-C-DTSA-PL-Legal",
+            "TBNL-C-DTSA-NPL-Legal",
+            "TBNL-C-ND-NPL-Legal",
+            "TBNL-C-D-PL-Ledger",
+            "TBNL-C-DT-PL-Ledger",
+            "TBNL-C-ND-PL-Ledger",
+            "TBNL-C-D-NPL-Ledger",
+            "TBNL-C-DT-NPL-Ledger",
+            "TBNL-C-DTSA-PL-Ledger",
+            "TBNL-C-DTSA-NPL-Ledger",
+            "TBNL-C-ND-NPL-Ledger",
+            "TBNL-NC-D-PL-Legal",
+            "TBNL-NC-DT-PL-Legal",
+            "TBNL-NC-ND-PL-Legal",
+            "TBNL-NC-D-NPL-Legal",
+            "TBNL-NC-DT-NPL-Legal",
+            "TBNL-NC-DTSA-PL-Legal",
+            "TBNL-NC-DTSA-NPL-Legal",
+            "TBNL-NC-ND-NPL-Legal",
+            "TBNL-NC-D-PL-Ledger",
+            "TBNL-NC-DT-PL-Ledger",
+            "TBNL-NC-ND-PL-Ledger",
+            "TBNL-NC-D-NPL-Ledger",
+            "TBNL-NC-DT-NPL-Ledger",
+            "TBNL-NC-DTSA-PL-Ledger",
+            "TBNL-NC-DTSA-NPL-Ledger",
+            "TBNL-NC-ND-NPL-Ledger",
+            "TBNL-ND-D-PL-Legal",
+            "TBNL-ND-DT-PL-Legal",
+            "TBNL-ND-ND-PL-Legal",
+            "TBNL-ND-D-NPL-Legal",
+            "TBNL-ND-DT-NPL-Legal",
+            "TBNL-ND-DTSA-PL-Legal",
+            "TBNL-ND-DTSA-NPL-Legal",
+            "TBNL-ND-ND-NPL-Legal",
+            "TBNL-ND-D-PL-Ledger",
+            "TBNL-ND-DT-PL-Ledger",
+            "TBNL-ND-ND-PL-Ledger",
+            "TBNL-ND-D-NPL-Ledger",
+            "TBNL-ND-DT-NPL-Ledger",
+            "TBNL-ND-DTSA-PL-Ledger",
+            "TBNL-ND-DTSA-NPL-Ledger",
+            "TBNL-ND-ND-NPL-Ledger"
+          ]
+        }
+      },
+      "required": ["item", "type"]
+    },
+    "MediaImage": {
+      "type": "object",
+      "properties": {
+        "item": {
+          "type": "string",
+          "format": "uri"
+        },
+        "altTag": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "image/gif",
+            "image/jpeg",
+            "image/png",
+            "image/tiff",
+            "image/x-ms-bmp",
+            "image/svg+xml",
+            "image/webp"
+          ]
+        },
+        "license": {
+          "enum": [
+            "CCO",
+            "CC BY",
+            "CC BY-ND",
+            "CC BY-NC",
+            "TBNL-C-D-PL-Legal",
+            "TBNL-C-DT-PL-Legal",
+            "TBNL-C-ND-PL-Legal",
+            "TBNL-C-D-NPL-Legal",
+            "TBNL-C-DT-NPL-Legal",
+            "TBNL-C-DTSA-PL-Legal",
+            "TBNL-C-DTSA-NPL-Legal",
+            "TBNL-C-ND-NPL-Legal",
+            "TBNL-C-D-PL-Ledger",
+            "TBNL-C-DT-PL-Ledger",
+            "TBNL-C-ND-PL-Ledger",
+            "TBNL-C-D-NPL-Ledger",
+            "TBNL-C-DT-NPL-Ledger",
+            "TBNL-C-DTSA-PL-Ledger",
+            "TBNL-C-DTSA-NPL-Ledger",
+            "TBNL-C-ND-NPL-Ledger",
+            "TBNL-NC-D-PL-Legal",
+            "TBNL-NC-DT-PL-Legal",
+            "TBNL-NC-ND-PL-Legal",
+            "TBNL-NC-D-NPL-Legal",
+            "TBNL-NC-DT-NPL-Legal",
+            "TBNL-NC-DTSA-PL-Legal",
+            "TBNL-NC-DTSA-NPL-Legal",
+            "TBNL-NC-ND-NPL-Legal",
+            "TBNL-NC-D-PL-Ledger",
+            "TBNL-NC-DT-PL-Ledger",
+            "TBNL-NC-ND-PL-Ledger",
+            "TBNL-NC-D-NPL-Ledger",
+            "TBNL-NC-DT-NPL-Ledger",
+            "TBNL-NC-DTSA-PL-Ledger",
+            "TBNL-NC-DTSA-NPL-Ledger",
+            "TBNL-NC-ND-NPL-Ledger",
+            "TBNL-ND-D-PL-Legal",
+            "TBNL-ND-DT-PL-Legal",
+            "TBNL-ND-ND-PL-Legal",
+            "TBNL-ND-D-NPL-Legal",
+            "TBNL-ND-DT-NPL-Legal",
+            "TBNL-ND-DTSA-PL-Legal",
+            "TBNL-ND-DTSA-NPL-Legal",
+            "TBNL-ND-ND-NPL-Legal",
+            "TBNL-ND-D-PL-Ledger",
+            "TBNL-ND-DT-PL-Ledger",
+            "TBNL-ND-ND-PL-Ledger",
+            "TBNL-ND-D-NPL-Ledger",
+            "TBNL-ND-DT-NPL-Ledger",
+            "TBNL-ND-DTSA-PL-Ledger",
+            "TBNL-ND-DTSA-NPL-Ledger",
+            "TBNL-ND-ND-NPL-Ledger"
+          ]
+        }
+      },
+      "required": ["item", "type"]
+    },
+    "MediaAudio": {
+      "type": "object",
+      "properties": {
+        "item": {
+          "type": "string",
+          "format": "uri"
+        },
+        "altTag": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "audio/wav",
+            "audio/vnd.wave",
+            "audio/mpeg",
+            "audio/ogg",
+            "audio/mp4",
+            "audio/aac",
+            "audio/webm",
+            "audio/flac"
+          ]
+        },
+        "cover": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "license": {
+          "enum": [
+            "CCO",
+            "CC BY",
+            "CC BY-ND",
+            "CC BY-NC",
+            "TBNL-C-D-PL-Legal",
+            "TBNL-C-DT-PL-Legal",
+            "TBNL-C-ND-PL-Legal",
+            "TBNL-C-D-NPL-Legal",
+            "TBNL-C-DT-NPL-Legal",
+            "TBNL-C-DTSA-PL-Legal",
+            "TBNL-C-DTSA-NPL-Legal",
+            "TBNL-C-ND-NPL-Legal",
+            "TBNL-C-D-PL-Ledger",
+            "TBNL-C-DT-PL-Ledger",
+            "TBNL-C-ND-PL-Ledger",
+            "TBNL-C-D-NPL-Ledger",
+            "TBNL-C-DT-NPL-Ledger",
+            "TBNL-C-DTSA-PL-Ledger",
+            "TBNL-C-DTSA-NPL-Ledger",
+            "TBNL-C-ND-NPL-Ledger",
+            "TBNL-NC-D-PL-Legal",
+            "TBNL-NC-DT-PL-Legal",
+            "TBNL-NC-ND-PL-Legal",
+            "TBNL-NC-D-NPL-Legal",
+            "TBNL-NC-DT-NPL-Legal",
+            "TBNL-NC-DTSA-PL-Legal",
+            "TBNL-NC-DTSA-NPL-Legal",
+            "TBNL-NC-ND-NPL-Legal",
+            "TBNL-NC-D-PL-Ledger",
+            "TBNL-NC-DT-PL-Ledger",
+            "TBNL-NC-ND-PL-Ledger",
+            "TBNL-NC-D-NPL-Ledger",
+            "TBNL-NC-DT-NPL-Ledger",
+            "TBNL-NC-DTSA-PL-Ledger",
+            "TBNL-NC-DTSA-NPL-Ledger",
+            "TBNL-NC-ND-NPL-Ledger",
+            "TBNL-ND-D-PL-Legal",
+            "TBNL-ND-DT-PL-Legal",
+            "TBNL-ND-ND-PL-Legal",
+            "TBNL-ND-D-NPL-Legal",
+            "TBNL-ND-DT-NPL-Legal",
+            "TBNL-ND-DTSA-PL-Legal",
+            "TBNL-ND-DTSA-NPL-Legal",
+            "TBNL-ND-ND-NPL-Legal",
+            "TBNL-ND-D-PL-Ledger",
+            "TBNL-ND-DT-PL-Ledger",
+            "TBNL-ND-ND-PL-Ledger",
+            "TBNL-ND-D-NPL-Ledger",
+            "TBNL-ND-DT-NPL-Ledger",
+            "TBNL-ND-DTSA-PL-Ledger",
+            "TBNL-ND-DTSA-NPL-Ledger",
+            "TBNL-ND-ND-NPL-Ledger"
+          ]
+        },
+        "credits": {
+          "type": "string"
+        },
+        "artist": {
+          "type": "string"
+        },
+        "genre": {
+          "type": "string"
+        },
+        "recordLabel": {
+          "type": "string"
+        },
+        "audioType": {
+          "type": "string",
+          "enum": ["MUSIC", "PODCAST", "AUDIOBOOK", "SOUNDS", "OTHER"]
+        }
+      },
+      "required": ["item", "type", "audioType"]
+    },
+    "TextOnlyMetadataDetails": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "mainContentFocus": {
+          "enum": ["TEXT_ONLY"]
+        }
+      },
+      "required": ["content", "mainContentFocus"]
+    }
+  }
+}

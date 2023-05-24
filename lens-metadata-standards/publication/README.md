@@ -9,4 +9,5 @@ These standard defines the metadata for a publication. This includes `POST`, `CO
 - [Article metadata standards](./article/README.md)
 - [Audio metadata standards](./audio/README.md)
 - [Image metadata standards](./image/README.md)
+- [TextOnly metadata standards](./text-only/README.md)
 - [Video metadata standards](./video/README.md)
