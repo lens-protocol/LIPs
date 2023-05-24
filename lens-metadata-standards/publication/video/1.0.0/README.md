@@ -20,7 +20,7 @@ interface VideoMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the video
    */
-  $schema: 'https://schemas.1hive.org/metadata/video/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json';
 
   /**
    * The metadata details for the video
@@ -52,7 +52,7 @@ interface VideoMetadataDetails extends MetadataCommon {
 
 ```json
 {
-  "$schema": "TO_MAP_TO_SCHEMA",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
   // start of marketplace fields - if its not tokenized no need to add these fields
   "name": "My Video", // optional
   "description": "My Video Description", // optional
