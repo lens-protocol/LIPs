@@ -48,54 +48,45 @@ interface AudioMetadataDetails extends MetadataCommon {
 
 ## JSON example
 
+Will use all the fields but remember a lot are optional you can use the json schema to see this.
+
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/audio/1.0.0/schema.json",
-  // start of marketplace fields - if its not tokenized no need to add these fields
-  "name": "My Audio", // optional
-  "description": "My Audio Description", // optional
-  "external_url": "https://myaudio.com", // optional
-  "attributes": [], // optional
-  "image": "https://myimage.com/image.png", // optional
-  "animation_url": "https://myaudio.com/audio.mp3", // optional
-  // end of marketplace fields
+  "name": "My Audio",
+  "description": "My Audio Description",
+  "external_url": "https://myaudio.com",
+  "attributes": [],
+  "image": "https://myimage.com/image.png",
+  "animation_url": "https://myaudio.com/audio.mp3",
   "lens": {
     "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "AUDIO",
-    "content": "My Audio Content", // optional
-    "tags": ["audio"], // optional
+    "content": "My Audio Content",
+    "tags": ["audio"],
     "audio": {
       "type": "MP3",
       "item": "https://myaudio.com",
-      "altTag": "My Audio", // optional
+      "altTag": "My Audio",
       "audioType": "MUSIC",
-      "cover": "https://myimage.com", // optional
+      "cover": "https://myimage.com",
       "duration": 100,
-      // means anyone can use it
-      // if you leave blank it also means anyone can use it
-      // you can also apply a proper license
-      "license": "CCO", // optional
-      "credits": "My Credits",  // optional
-      "artist": "My Artist", // optional
-      "genre": "My Genre", // optional
-      "recordLabel": "My Record Label", // optional
+      "license": "CCO",
+      "credits": "My Credits",
+      "artist": "My Artist",
+      "genre": "My Genre",
+      "recordLabel": "My Record Label",
     },
-    // you can attach more media items as you wish
-    // you can add more audios in here as well any extra
-    // media items can go in here
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
-        "altTag": "My Image", // optional
-        // means anyone can use it
-        // if you leave blank it also means anyone can use it
-        // you can also apply a proper license
-        "license": "CCO", // optional
+        "altTag": "My Image",
+        "license": "CCO",
       },
     ],
-    "appId": "my-app-id", // optional
+    "appId": "my-app-id",
   },
 };
 ```

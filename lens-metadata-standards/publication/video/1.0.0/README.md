@@ -50,51 +50,42 @@ interface VideoMetadataDetails extends MetadataCommon {
 
 ## JSON example
 
+Will use all the fields but remember a lot are optional you can use the json schema to see this.
+
 ### Video
 
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
-  // start of marketplace fields - if its not tokenized no need to add these fields
-  "name": "My Video", // optional
-  "description": "My Video Description", // optional
-  "external_url": "https://myvideo.com", // optional
-  "attributes": [], // optional
-  "image": "https://myimage.com/image.png", // optional
-  "animation_url": "https://myvideo.com/video.mp4", // optional
-  // end of marketplace fields
+  "name": "My Video",
+  "description": "My Video Description",
+  "external_url": "https://myvideo.com",
+  "attributes": [],
+  "image": "https://myimage.com/image.png",
+  "animation_url": "https://myvideo.com/video.mp4",
   "lens": {
     "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "VIDEO",
-    "content": "My Video Content", // optional
-    "tags": ["video"], // optional
+    "content": "My Video Content",
+    "tags": ["video"],
     "video": {
       "type": "MP4",
       "item": "https://myvideo.com",
-      "altTag": "My Video", // optional
-      "cover": "https://myimage.com", // optional
-      "duration": 100,  // optional
-      // means anyone can use it
-      // if you leave blank it also means anyone can use it
-      // you can also apply a proper license
-      "license": "CCO", // optional
+      "altTag": "My Video",
+      "cover": "https://myimage.com",
+      "duration": 100,
+      "license": "CCO",
     },
-    // you can attach more media items as you wish
-    // you can add more videos in here as well any extra
-    // media items can go in here
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
-        "altTag": "My Image", // optional
-        // means anyone can use it
-        // if you leave blank it also means anyone can use it
-        // you can also apply a proper license
-        "license": "CCO", // optional
+        "altTag": "My Image",
+        "license": "CCO",
       },
     ],
-    "appId": "my-app-id", // optional
+    "appId": "my-app-id",
   },
 };
 ```
@@ -106,46 +97,35 @@ Must be under 2 minutes.
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
-  // start of marketplace fields - if its not tokenized no need to add these fields
-  "name": "My Video", // optional
-  "description": "My Video Description", // optional
-  "external_url": "https://myvideo.com", // optional
-  "attributes": [], // optional
-  "image": "https://myimage.com/image.png", // optional
-  "animation_url": "https://myvideo.com/video.mp4", // optional
-  // end of marketplace fields
+  "name": "My Video",
+  "description": "My Video Description",
+  "external_url": "https://myvideo.com",
+  "attributes": [],
+  "image": "https://myimage.com/image.png",
+  "animation_url": "https://myvideo.com/video.mp4",
   "lens": {
     "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "SHORT_VIDEO",
-    "content": "My Video Content", // optional
-    "tags": ["video"], // optional
+    "content": "My Short Video Content",
+    "tags": ["video"],
     "video": {
       "type": "MP4",
       "item": "https://myvideo.com",
-      "altTag": "My Video", // optional
-      "cover": "https://myimage.com", // optional
-      "duration": 100,  // optional
-      // means anyone can use it
-      // if you leave blank it also means anyone can use it
-      // you can also apply a proper license
-      "license": "CCO", // optional
+      "altTag": "My Video",
+      "cover": "https://myimage.com",
+      "duration": 100,
+      "license": "CCO",
     },
-    // you can attach more media items as you wish
-    // you can add more videos in here as well any extra
-    // media items can go in here
     "attachments": [
       {
         "type": "PNG",
         "item": "https://myimage.com",
-        "altTag": "My Image", // optional
-        // means anyone can use it
-        // if you leave blank it also means anyone can use it
-        // you can also apply a proper license
-        "license": "CCO", // optional
+        "altTag": "My Image",
+        "license": "CCO",
       },
     ],
-    "appId": "my-app-id", // optional
+    "appId": "my-app-id",
   },
 };
 ```
