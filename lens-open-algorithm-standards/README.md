@@ -1,12 +1,12 @@
 # Lens Open Algorithm Standard
 
-The rapid growth and development of Lens algorithmic systems including ML have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming algorithm-specific conventions, entities, service requirements, metadata, and data output, as outlined above, the Lens community can streamline the process of integrating various Lens algorithms, ML models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the Lens data sicence community. By adopting and adhering to these open standards, the community can accelerate progress in Lens data science and ML to unlock its full potential to benefit from various industries and applications across the ecosystem.
+The rapid growth and development of Lens algorithmic systems including ML have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming algorithm-specific conventions, entities, service requirements, metadata, and data output, as outlined above, the Lens community can streamline the process of integrating various Lens algorithms, algorithm models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the Lens data sicence community. By adopting and adhering to these open standards, the community can accelerate progress in Lens data science to unlock its full potential to benefit from various industries and applications across the ecosystem.
 
 ## Specification
 
 ### Naming Conventions
 
-When defining a new machine learning (ML) standard, adhere to the following naming conventions:
+When defining a new Lens Open Algorithm Standard, adhere to the following naming conventions:
 
 ```bash
 {entity}_{personal/global}_{model_output_type}
@@ -19,7 +19,7 @@ Examples:
 
 #### Entity
 
-An entity is the main object that we are trying to describe. The ML open standards within [entities](./entities) have all the current entities which are supported by the Lens ML open standards. Anyone can do a PR proposal to add a new entity. It must follow the template of the [entity template](./entities/template.entity.md).
+An entity is the main object that we are trying to describe. The Lens Open Algorithm Standard within [entities](./entities) have all the current entities which are supported by the Lens Open Algorithm Standard. Anyone can do a PR proposal to add a new entity. It must follow the template of the [entity template](./entities/template.entity.md).
 
 #### Personal and Global
 
@@ -31,7 +31,7 @@ The modal output type refers to the primary output of a specific model. For inst
 
 ### Model Data Output
 
-Each approved ML open standard model must have a clearly defined service data output, specifying the data returned by the service. This standardization is crucial for ensuring ease of use and consistent output interfaces across implementations. The advantage of this approach is that it does not impose constraints on the programming language, the model's construction, the data it utilizes, or the computation methods employed. Instead, it focuses solely on ensuring that the output conforms to the correct structure.
+Each approved Lens Open Algorithm Standard model must have a clearly defined service data output, specifying the data returned by the service. This standardization is crucial for ensuring ease of use and consistent output interfaces across implementations. The advantage of this approach is that it does not impose constraints on the programming language, the model's construction, the data it utilizes, or the computation methods employed. Instead, it focuses solely on ensuring that the output conforms to the correct structure.
 
 Additionally, the data output should utilize a tuple-style format when possible to minimize wasted space caused by repeated object names. It is also required that you write the spec using json schema to make it easy for all to read.
 

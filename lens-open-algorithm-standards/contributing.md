@@ -2,7 +2,7 @@
 
 ## How to Contribute
 
-Everyone is welcome to contribute to the ML Open Standards by submitting Pull Requests (PRs) and utilizing the templates provided in each folder for suggesting new entities, models, and services.
+Everyone is welcome to contribute to the Lens Open Algorithm Standard by submitting Pull Requests (PRs) and utilizing the templates provided in each folder for suggesting new entities, models, and services.
 
 ### Entities
 
@@ -14,4 +14,4 @@ To define a new model, submit a PR using the [model template](./models/template.
 
 ### Services
 
-Becoming a service provider and showcasing your services to the Lens ML Open Standards community is the most common way to contribute. To do so, find the entity and model you want to provide a service for, and submit a PR inside the `entity > model > service` folder using the template provided there.
+Becoming a service provider and showcasing your services to the Lens Open Algorithm Standard community is the most common way to contribute. To do so, find the entity and model you want to provide a service for, and submit a PR inside the `entity > model > service` folder using the template provided there.
