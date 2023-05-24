@@ -43,7 +43,7 @@
       "format": "uri"
     },
     "lens": {
-      "$ref": "#/definitions/VideoMetadataDetails"
+      "$ref": "#/definitions/AudioMetadataDetails"
     }
   },
   "required": ["$schema", "lens"],
@@ -322,14 +322,14 @@
       },
       "required": ["item", "type", "audioType"]
     },
-    "VideoMetadataDetails": {
+    "AudioMetadataDetails": {
       "type": "object",
       "properties": {
         "video": {
-          "$ref": "#/definitions/MediaVideo"
+          "$ref": "#/definitions/MediaAudio"
         },
         "mainContentFocus": {
-          "enum": ["VIDEO", "SHORT_VIDEO"]
+          "enum": ["AUDIO"]
         },
         "attachments": {
           "type": "array",
@@ -342,7 +342,7 @@
           }
         }
       },
-      "required": ["video", "mainContentFocus"]
+      "required": ["audio", "mainContentFocus"]
     }
   }
 }
