@@ -60,7 +60,7 @@ Will use all the fields but remember a lot are optional you can use the json sch
   "image": "https://myimage.com/image.png",
   "animation_url": "https://myaudio.com/audio.mp3",
   "lens": {
-    "metadata_id": "1234",
+    "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "AUDIO",
     "content": "My Audio Content",

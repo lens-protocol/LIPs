@@ -59,7 +59,7 @@ Will use all the fields but remember a lot are optional you can use the json sch
   "attributes": [],
   "image": "https://myimage.com/image.png",
   "lens": {
-    "metadata_id": "1234",
+    "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "IMAGE",
     "content": "My Image Content",
