@@ -1,6 +1,6 @@
 # Video
 
-This holds all the standards related to the `VIDEO` publication focus.
+This holds all the standards related to the `VIDEO` and `SHORT_VIDEO` publication focus.
 
 ## Table of Contents
 
