@@ -58,7 +58,6 @@ Will use all the fields but remember a lot are optional you can use the json sch
   "attributes": [],
   "image": "https://myimage.com/image.png",
   "external_url": "https://checking-in-link.com",
-  "attributes": [],
   "lens": {
     "id": "1234",
     "location": "AAVE office",
