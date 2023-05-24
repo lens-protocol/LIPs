@@ -43,7 +43,7 @@
       "format": "uri"
     },
     "lens": {
-      "$ref": "#/definitions/EventMetadataDetails"
+      "$ref": "#/definitions/LiveStreamMetadataDetails"
     }
   },
   "required": ["$schema", "lens"],
@@ -322,7 +322,7 @@
       },
       "required": ["item", "type", "audioType"]
     },
-    "EventMetadataDetails": {
+    "LiveStreamMetadataDetails": {
       "type": "object",
       "properties": {
         "id": {
@@ -350,20 +350,23 @@
         "title": {
           "type": "string"
         },
-        "location": {
-          "type": "string"
-        },
         "startsAt": {
           "type": "string"
         },
         "endsAt": {
           "type": "string"
         },
-        "links": {
-          "type": "array",
-          "items": {
-            "type": "uri"
-          }
+        "playbackUrl": {
+          "type": "uri"
+        },
+        "liveUrl": {
+          "type": "uri"
+        },
+        "isLiveNowApiCall": {
+          "type": "uri"
+        },
+        "mainContentFocus": {
+          "enum": ["LIVE_STREAM"]
         },
         "attachments": {
           "type": "array",
@@ -376,15 +379,7 @@
           }
         }
       },
-      "required": [
-        "id",
-        "locale",
-        "title",
-        "location",
-        "startsAt",
-        "endsAt",
-        "mainContentFocus"
-      ]
+      "required": ["id", "locale", "startsAt", "liveUrl", "mainContentFocus"]
     }
   }
 }

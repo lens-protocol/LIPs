@@ -13,6 +13,7 @@ These standard defines the metadata for a publication. This includes `POST`, `CO
 - [Event metadata standards](./event/README.md)
 - [Image metadata standards](./image/README.md)
 - [Link metadata standards](./link/README.md)
+- [LiveStream metadata standards](./live-stream/README.md)
 - [TextOnly metadata standards](./text-only/README.md)
 - [Transaction metadata standards](./transaction/README.md)
 - [Video metadata standards](./video/README.md)
