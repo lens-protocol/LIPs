@@ -325,6 +325,28 @@
     "VideoMetadataDetails": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contentWarning": {
+          "type": "string",
+          "enum": ["NSFW", "SENSITIVE", "SPOILER"]
+        },
+        "appId": {
+          "type": "string"
+        },
         "video": {
           "$ref": "#/definitions/MediaVideo"
         },
@@ -342,7 +364,7 @@
           }
         }
       },
-      "required": ["video", "mainContentFocus"]
+      "required": ["id", "locale", "video", "mainContentFocus"]
     }
   }
 }

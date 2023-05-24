@@ -325,14 +325,33 @@
     "TextOnlyMetadataDetails": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "content": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contentWarning": {
+          "type": "string",
+          "enum": ["NSFW", "SENSITIVE", "SPOILER"]
+        },
+        "appId": {
           "type": "string"
         },
         "mainContentFocus": {
           "enum": ["TEXT_ONLY"]
         }
       },
-      "required": ["content", "mainContentFocus"]
+      "required": ["id", "locale", "content", "mainContentFocus"]
     }
   }
 }

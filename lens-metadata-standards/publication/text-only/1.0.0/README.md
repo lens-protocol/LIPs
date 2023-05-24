@@ -55,7 +55,7 @@ Will use all the fields but remember a lot are optional you can use the json sch
   "image": "https://text.com/image.png",
   "lens": {
     "title": "My text",
-    "metadata_id": "1234",
+    "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "TEXT_ONLY",
     "content": "My text Content",
