@@ -78,3 +78,5 @@ If you just want to start a new discussion without core changes to the repo feel
 ### Service Distribution
 
 Services that are aligned with this standard can be integrated into reach layers and services such as the Lens API with the limit and expect that there are specific resources available for the integration and it provides general value for the Lens ecosystem. In such case, reach out to a Lens team member for assistance on API-specific documentation. Additionally there are third party services that might also be suitable for integrations or directly to existing Lens clients.
+
+By adopting and utilizing the Open Algorithm Standard, you agree to the terms and conditions [here](./terms.pdf).
