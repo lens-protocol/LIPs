@@ -54,7 +54,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/embed/1.0.0/schema.json",
   "name": "My embed",
-  "description": "My embed Description",
+  "description": "My embed description",
   "external_url": "https://mylink.com",
   "attributes": [],
   "image": "https://mynftimage.com/image.png",
