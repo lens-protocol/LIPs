@@ -35,6 +35,11 @@ export interface MetadataCommon {
   contentWarning?: PublicationContentWarning;
 
   /**
+   * Ability to hide from feed
+   */
+  hideFromFeed?: boolean;
+
+  /**
    * This is the appId the content belongs to
    */
   appId?: AppId;
