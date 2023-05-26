@@ -20,7 +20,7 @@ interface VideoMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the video
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/video/1.0.0/schema.json';
 
   /**
    * The metadata details for the video
@@ -56,7 +56,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/video/1.0.0/schema.json",
   "name": "My Video",
   "description": "My Video Description",
   "external_url": "https://myvideo.com",
@@ -96,7 +96,7 @@ Must be under 2 minutes.
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/video/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/video/1.0.0/schema.json",
   "name": "My Video",
   "description": "My Video Description",
   "external_url": "https://myvideo.com",

@@ -20,7 +20,7 @@ interface LinkMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the video
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/link/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/link/1.0.0/schema.json';
 
   /**
    * The metadata details for the image
@@ -52,7 +52,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/link/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/link/1.0.0/schema.json",
   "name": "My link",
   "description": "My link Description",
   "external_url": "https://mylink.com",

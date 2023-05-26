@@ -20,7 +20,7 @@ interface AudioMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the audio
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/audio/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/audio/1.0.0/schema.json';
 
   /**
    * The metadata details for the image
@@ -52,7 +52,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/audio/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/audio/1.0.0/schema.json",
   "name": "My Audio",
   "description": "My Audio Description",
   "external_url": "https://myaudio.com",

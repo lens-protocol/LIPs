@@ -20,7 +20,7 @@ interface EventMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the event
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/event/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/event/1.0.0/schema.json';
 
   /**
    * The metadata details for the event
@@ -72,7 +72,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/event/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/event/1.0.0/schema.json",
   "name": "My event",
   "description": "My event",
   "attributes": [],

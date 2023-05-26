@@ -20,7 +20,7 @@ interface ArticleMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the article
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/article/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/article/1.0.0/schema.json';
 
   /**
    * The metadata details for the image
@@ -57,7 +57,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/article/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/article/1.0.0/schema.json",
   "name": "My Article",
   "description": "My Article Description",
   "external_url": "https://myarticle.com",

@@ -20,7 +20,7 @@ interface CheckingInMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the checking in
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/checking-in/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/checking-in/1.0.0/schema.json';
 
   /**
    * The metadata details for the checking in
@@ -52,7 +52,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/lens-metadata-standards/publication/checking-in/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/checking-in/1.0.0/schema.json",
   "name": "Me checking in",
   "description": "Me checking in",
   "attributes": [],
