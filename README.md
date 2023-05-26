@@ -5,3 +5,4 @@ Welcome to the Lens Standards repository. This repository will contain all the o
 ## Table of Contents
 
 - [Lens open algorithm standards](./lens-open-algorithm-standards/README.md)
+- [Lens metadata standards](./lens-metadata-standards/README.md)
