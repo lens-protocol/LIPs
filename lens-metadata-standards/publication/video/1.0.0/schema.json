@@ -344,6 +344,9 @@
           "type": "string",
           "enum": ["NSFW", "SENSITIVE", "SPOILER"]
         },
+        "hideFromFeed": {
+          "type": "boolean"
+        },
         "appId": {
           "type": "string"
         },
