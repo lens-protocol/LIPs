@@ -68,7 +68,7 @@ interface EventMetadataDetails extends MetadataCommon {
 
 ## JSON example
 
-Will use all the fields but remember a lot are optional you can use the json schema to see this.
+Will use all the fields but remember a lot are optional you can use the JSON schema to see this.
 
 ```json
 {
