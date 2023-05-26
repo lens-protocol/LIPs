@@ -20,7 +20,7 @@ interface LiveStreamMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the live stream
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/live-stream/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/live-stream/1.0.0/schema.json';
 
   /**
    * The metadata details for the live stream
@@ -78,7 +78,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/live-stream/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/live-stream/1.0.0/schema.json",
   "name": "My live stream",
   "description": "My live stream",
   "attributes": [],

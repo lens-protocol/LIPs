@@ -20,7 +20,7 @@ interface TextOnlyMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the text
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/text-only/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/text-only/1.0.0/schema.json';
 
   /**
    * The metadata details for the text only
@@ -47,7 +47,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/text-only/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/text-only/1.0.0/schema.json",
   "name": "My text",
   "description": "My text Description",
   "external_url": "https://mytext.com",

@@ -20,7 +20,7 @@ interface EmbedMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the embed
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/embed/1.0.0/schema.json';
+  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/embed/1.0.0/schema.json';
 
   /**
    * The metadata details for the image
@@ -52,7 +52,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/lens-protocol/lens-standards/main/LIPs/publication/embed/1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/embed/1.0.0/schema.json",
   "name": "My embed",
   "description": "My embed description",
   "external_url": "https://mylink.com",
