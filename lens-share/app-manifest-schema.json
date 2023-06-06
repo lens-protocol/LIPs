@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "shortname": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 36
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "icon": {
+      "type": "string",
+      "format": "uri"
+    },
+    "image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["mobile", "web", "desktop"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "mappings": {
+      "type": "object",
+      "properties": {
+        "mobile": {
+          "$ref": "#/definitions/mappingProperties"
+        },
+        "web": {
+          "$ref": "#/definitions/mappingProperties"
+        },
+        "desktop": {
+          "$ref": "#/definitions/mappingProperties"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 10
+      }
+    }
+  },
+  "required": [
+    "shortname",
+    "name",
+    "description",
+    "icon",
+    "image",
+    "platforms",
+    "mappings",
+    "tags"
+  ],
+  "definitions": {
+    "mappingProperties": {
+      "type": "object",
+      "properties": {
+        "home": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string"
+        },
+        "publication": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
