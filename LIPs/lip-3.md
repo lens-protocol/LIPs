@@ -1,9 +1,11 @@
+---
 title: Lens Share
 description: A standard to share Lens profiles and publications across the Lens ecosystem
 author: Paweł Lula (@desfero), Cesare Naldi (@cesarenaldi), Kris Urbas (@krzysu)
 status: Draft
 type: Lens Ecosystem Standard
 created: 2023-06-07
+---
 
 ## Abstract
 
@@ -90,7 +92,7 @@ The Lens Share UI is the one responding to `https://share.lens.xyz` requests. It
 
 Once the app is chosen it will automatically redirect to the given app with the app-specific URL details required to open the linked resource (Profile or Publication).
 
-![image](./lip-2/diagram-1.png)
+![image](./lip-3/diagram-1.png)
 
 The sequence of events is:
 
@@ -106,7 +108,7 @@ If the link includes attribution details (e.g. `?by=phaver` param) such informat
 
 The user could express a preference to open any future links using the same app or "just once". Opening a new link will result in an immediate redirect to the chosen app. Such preference will be stored in the device using a simple cookie so that the redirect can happen with an efficient HTTP 302.
 
-![image](./lip-2/diagram-2.png)
+![image](./lip-3/diagram-2.png)
 
 The sequence of events in this case is:
 
