@@ -69,8 +69,8 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/transaction/1.0.0/schema.json",
-  "name": "Me transaction",
-  "description": "Me transaction",
+  "name": "My transaction",
+  "description": "My transaction",
   "attributes": [],
   "image": "https://myimage.com/image.png",
   "external_url": "https://transaction-link.com",
