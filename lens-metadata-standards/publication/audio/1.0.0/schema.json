@@ -350,7 +350,7 @@
         "appId": {
           "type": "string"
         },
-        "video": {
+        "audio": {
           "$ref": "#/definitions/MediaAudio"
         },
         "mainContentFocus": {
