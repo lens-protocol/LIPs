@@ -11,6 +11,7 @@ This repository draws significant inspiration from the Ethereum Improvement Prop
 We have different types of proposals which currently are:
 
 - Protocol
+- Lens Ecosystem Standard
 - Lens Metadata Standard
 - Lens Open Algorithm Standard
 
