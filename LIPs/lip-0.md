@@ -1,9 +1,9 @@
 ---
-title: Lens improvement plans
+title: LIPs
 description: Start having open lens improvement plans to allow better discussions and building in the open
 author: Josh Stevens (joshstevens19)
 status: Draft
-type: Lens Metadata Standard
+type: Protocol
 created: 2023-05-24
 ---
 
