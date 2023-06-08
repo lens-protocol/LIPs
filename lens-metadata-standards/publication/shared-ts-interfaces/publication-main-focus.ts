@@ -8,6 +8,7 @@ export enum PublicationMainFocus {
   EMBED = 'EMBED',
   CHECKING_IN = 'CHECKING_IN',
   EVENT = 'EVENT',
+  MINT = 'MINT',
   TRANSACTION = 'TRANSACTION',
   LIVE_STREAM = 'LIVE_STREAM',
   SHORT_VIDEO = 'SHORT_VIDEO',
