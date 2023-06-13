@@ -12,4 +12,5 @@ export enum PublicationMainFocus {
   TRANSACTION = 'TRANSACTION',
   LIVE_STREAM = 'LIVE_STREAM',
   SHORT_VIDEO = 'SHORT_VIDEO',
+  THREE_D = '3D',
 }

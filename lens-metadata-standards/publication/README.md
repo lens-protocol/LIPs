@@ -6,6 +6,7 @@ These standard defines the metadata for a publication. This includes `POST`, `CO
 
 ## Table of Contents
 
+- [3D metadata standards](./3D/README.md)
 - [Article metadata standards](./article/README.md)
 - [Audio metadata standards](./audio/README.md)
 - [Checking in metadata standards](./checking-in/README.md)
