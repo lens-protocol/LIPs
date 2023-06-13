@@ -11,9 +11,9 @@ References:
 - [MarketplaceMetadata](../../shared-ts-interfaces/marketplace-metadata.ts)
 - [MetadataCommon](../../shared-ts-interfaces/metadata-common.ts)
 - [PublicationMainFocus](../../shared-ts-interfaces/publication-main-focus.ts)
-- [MediaVideo](../../shared-ts-interfaces/media-video.ts)
-- [MediaImage](../../shared-ts-interfaces/media-image.ts)
-- [MediaAudio](../../shared-ts-interfaces/media-audio.ts)
+- [MediaVideo](../../shared-ts-interfaces/media/media-video.ts)
+- [MediaImage](../../shared-ts-interfaces/media/media-image.ts)
+- [MediaAudio](../../shared-ts-interfaces/media/media-audio.ts)
 
 ```ts
 interface AudioMetadata extends MarketplaceMetadata {
