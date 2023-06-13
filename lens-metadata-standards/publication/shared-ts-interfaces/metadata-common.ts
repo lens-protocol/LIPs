@@ -40,6 +40,12 @@ export interface MetadataCommon {
   hideFromFeed?: boolean;
 
   /**
+   * Ability to only show when you filter on your app id
+   * This is useful for apps that want to show only their content on their apps
+   */
+  globalReach?: boolean;
+
+  /**
    * This is the appId the content belongs to
    */
   appId?: AppId;

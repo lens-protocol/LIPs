@@ -26,6 +26,15 @@ interface TextOnlyMetadata extends MarketplaceMetadata {
    * The metadata details for the text only
    */
   lens: TextOnlyMetadataDetails;
+
+  /**
+   * If you use an appId and you only want your app to be able to publish under it,
+   * you will need to sign the `lens` object with your server private key
+   * and populate the signature here. We will need your public key to verify this.
+   * If the signature does not match what we have in our mappings it will not be surfaced
+   * in the API.
+   */
+  signture: string;
 }
 
 interface TextOnlyMetadataDetails extends MetadataCommon {

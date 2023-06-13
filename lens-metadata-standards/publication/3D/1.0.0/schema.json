@@ -44,6 +44,9 @@
     },
     "lens": {
       "$ref": "#/definitions/3DMetadataDetails"
+    },
+    "signture": {
+      "type": "string"
     }
   },
   "required": ["$schema", "lens"],
@@ -418,6 +421,9 @@
           "enum": ["NSFW", "SENSITIVE", "SPOILER"]
         },
         "hideFromFeed": {
+          "type": "boolean"
+        },
+        "globalReach": {
           "type": "boolean"
         },
         "appId": {

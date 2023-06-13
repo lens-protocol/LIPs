@@ -44,6 +44,9 @@
     },
     "lens": {
       "$ref": "#/definitions/LiveStreamMetadataDetails"
+    },
+    "signture": {
+      "type": "string"
     }
   },
   "required": ["$schema", "lens"],
@@ -345,6 +348,9 @@
           "enum": ["NSFW", "SENSITIVE", "SPOILER"]
         },
         "hideFromFeed": {
+          "type": "boolean"
+        },
+        "globalReach": {
           "type": "boolean"
         },
         "appId": {
