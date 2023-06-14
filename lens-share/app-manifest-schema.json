@@ -2,81 +2,49 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "shortname": {
-      "type": "string",
-      "maxLength": 10
-    },
-    "name": {
-      "type": "string",
-      "maxLength": 36
-    },
-    "description": {
-      "type": "string",
-      "maxLength": 140
-    },
-    "icon": {
-      "type": "string",
-      "format": "uri"
-    },
-    "image": {
-      "type": "string",
-      "format": "uri"
-    },
-    "platforms": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": ["mobile", "web", "desktop"]
-      },
-      "minItems": 1,
-      "uniqueItems": true
-    },
-    "mappings": {
-      "type": "object",
-      "properties": {
-        "mobile": {
-          "$ref": "#/definitions/mappingProperties"
-        },
-        "web": {
-          "$ref": "#/definitions/mappingProperties"
-        },
-        "desktop": {
-          "$ref": "#/definitions/mappingProperties"
-        }
-      }
-    },
+    "appId": { "$ref": "#/definitions/AppIdSchema" },
+    "name": { "type": "string", "minLength": 3, "maxLength": 36 },
+    "description": { "type": "string", "minLength": 20, "maxLength": 200 },
+    "icon": { "type": "string", "format": "uri" },
+    "image": { "type": "string", "format": "uri" },
     "tags": {
       "type": "array",
-      "items": {
-        "type": "string",
-        "maxLength": 10
-      }
-    }
-  },
-  "required": [
-    "shortname",
-    "name",
-    "description",
-    "icon",
-    "image",
-    "platforms",
-    "mappings",
-    "tags"
-  ],
-  "definitions": {
-    "mappingProperties": {
+      "uniqueItems": true,
+      "items": { "$ref": "#/definitions/TagSchema" },
+      "maxItems": 4
+    },
+    "routes": {
       "type": "object",
       "properties": {
-        "home": {
-          "type": "string"
-        },
-        "profile": {
-          "type": "string"
-        },
-        "publication": {
-          "type": "string"
-        }
-      }
+        "home": { "type": "string", "format": "uri" },
+        "profile": { "$ref": "#/definitions/ProfileUrlSchema" },
+        "publication": { "$ref": "#/definitions/PublicationUrlSchema" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["appId", "name", "description", "icon", "routes"],
+  "additionalProperties": false,
+  "definitions": {
+    "AppIdSchema": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 16,
+      "pattern": "^[a-z][a-z0-9]+$"
+    },
+    "ProfileUrlSchema": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "\\:handle"
+    },
+    "PublicationUrlSchema": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "\\:id"
+    },
+    "TagSchema": {
+      "type": "string",
+      "enum": ["audio", "image", "text", "video"]
     }
   }
 }

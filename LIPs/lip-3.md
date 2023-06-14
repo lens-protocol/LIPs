@@ -43,25 +43,17 @@ An example:
 
 ```json
 {
-  "shortname": "foobar",
+  "appId": "foobar",
   "name": "Foo Bar",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   "icon": "https://example.com/icon.png",
   "image": "https://example.com/image.png",
-  "platforms": ["mobile", "web"],
-  "mappings": {
-    "mobile": {
-      "home": "com.foobar://home",
-      "profile": "com.foobar://user/:handle",
-      "publication": "com.foobar://publication/:id"
-    },
-    "web": {
-      "home": "http://example.com/",
-      "profile": "http://example.com/u/:handle",
-      "publication": "http://example.com/p/:id"
-    }
+  "routes": {
+    "home": "com.foobar://home",
+    "profile": "com.foobar://user/:handle",
+    "publication": "com.foobar://publication/:id"
   },
-  "tags": ["foo", "bar", "social"]
+  "tags": ["video", "audio", "text"]
 }
 ```
 
