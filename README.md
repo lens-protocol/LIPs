@@ -2,6 +2,8 @@
 
 The objective of the LIPs is to establish uniformity and offer comprehensive documentation for Lens, including the conventions and frameworks built on top of it. This repository monitors both completed and ongoing enhancements to Lens through the LIPs.
 
+LIPs are a path for Lens community to establish a formal framework for open governance and contributions for Lens Protocol. As the Lens ecosystem grows, it is important to enable the ability to participate in the future development of Lens Protocol and set foundations for open governance and path towards decentralization. As Lens Protocol is a neutral and flexible technology stack for social networking use-cases, LIPs provides the basis to ensure that Lens Protocol remains flexible and uniform across all potential use-cases, improvements and ideas within the community.
+
 This repository will contain all the open standards that are used by Lens Protocol. The standards are divided into folders. Each folder contains a specific type of standard. For example, the `lens-open-algorithm-standards` folder contains all the standards that are related to the Lens Open Algorithm Standards.
 
 This repository draws significant inspiration from the Ethereum Improvement Proposals (EIPs) and their well-structured format. We have made an effort to closely adhere to the same format in order to maintain familiarity for those accustomed to it. As a result, there should be little that feels entirely new to individuals who are accustomed to working with EIPs.
