@@ -158,4 +158,4 @@ If using JSONL you do not need the `next` field and the size rules below do not 
 
 ## Model service requirements and constraints
 
-- The model should be updated no more then every 3 hours.
+- The model should be updated no more than every 3 hours.
