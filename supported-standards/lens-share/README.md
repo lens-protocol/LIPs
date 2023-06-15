@@ -1,11 +1,4 @@
----
-title: Lens Share
-description: A standard to share Lens profiles and publications across the Lens ecosystem
-author: Paweł Lula (@desfero), Cesare Naldi (@cesarenaldi), Kris Urbas (@krzysu)
-status: Draft
-type: Lens Ecosystem Standard
-created: 2023-06-07
----
+# Lens Share
 
 ## Abstract
 
@@ -59,7 +52,7 @@ An example:
 
 The `:handle` and `:id` tokens represent placeholder for where the app expect Profile handles and Publication Ids. The specification could be extended to support Profile Ids if need to.
 
-The app manifest should be submitted as PRs to the registry repository and there should be a process in place to validate and approve new apps. See proposed [schema](../supported-standards/lens-share/app-manifest-schema.json).
+The app manifest should be submitted as PRs to the registry repository and there should be a process in place to validate and approve new apps. See proposed [schema](./app-manifest-schema.json).
 
 ### Lens Share Link
 
@@ -84,7 +77,7 @@ The Lens Share UI is the one responding to `https://share.lens.xyz` requests. It
 
 Once the app is chosen it will automatically redirect to the given app with the app-specific URL details required to open the linked resource (Profile or Publication).
 
-![image](../supported-standards/lens-share/assets/diagram-1.png)
+![image](./assets/diagram-1.png)
 
 The sequence of events is:
 
@@ -100,7 +93,7 @@ If the link includes attribution details (e.g. `?by=phaver` param) such informat
 
 The user could express a preference to open any future links using the same app or "just once". Opening a new link will result in an immediate redirect to the chosen app. Such preference will be stored in the device using a simple cookie so that the redirect can happen with an efficient HTTP 302.
 
-![image](../supported-standards/lens-share/assets/diagram-2.png)
+![image](./assets/diagram-2.png)
 
 The sequence of events in this case is:
 
