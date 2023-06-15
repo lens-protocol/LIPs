@@ -1,6 +1,6 @@
 # Lens Open Algorithm Standard
 
-The rapid growth and development of Lens algorithmic systems including ML have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming algorithm-specific conventions, entities, service requirements, metadata, and data output, as outlined above, the Lens community can streamline the process of integrating various Lens algorithms, algorithm models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the Lens data science community. By adopting and adhering to these open standards, the community can accelerate progress in Lens data science to unlock its full potential to benefit from various industries and applications across the ecosystem.
+The rapid growth and development of Lens algorithmic systems, including ML, have underscored the importance of establishing open standards that promote consistency, interoperability, and collaboration. By setting open standards for naming algorithm-specific conventions, entities, service requirements, metadata, and data output, as outlined above, the Lens community can streamline the process of integrating various Lens algorithms, algorithm models and services into a cohesive ecosystem. This uniformity will enable developers and researchers to work more effectively together, reducing the time and effort spent on understanding and adapting to different proprietary systems. Furthermore, these open standards facilitate the sharing of knowledge and expertise, fostering innovation and encouraging the development of best practices in the Lens data science community. By adopting and adhering to these open standards, the community can accelerate progress in Lens data science to unlock its full potential to benefit from various industries and applications across the ecosystem.
 
 ## Specification
 
@@ -19,7 +19,7 @@ Examples:
 
 #### Entity
 
-An entity is the main object that we are trying to describe. The Lens Open Algorithm Standard within [entities](./entities) have all the current entities which are supported by the Lens Open Algorithm Standard. Anyone can do a PR proposal to add a new entity. It must follow the template of the [entity template](./entities/template.entity.md).
+An entity is the main object that we are trying to describe. The Lens Open Algorithm Standard within [entities](./entities) have all the current entities which are supported by the Lens Open Algorithm Standard. Anyone can make a PR proposal to add a new entity. It must follow the template of the [entity template](./entities/template.entity.md).
 
 #### Personal and Global
 
