@@ -19,6 +19,4 @@ We have different types of proposals which currently are:
 
 All of these can go through an LIP process. Lens Open Algorithm Standards are the only ones that are not required to go through the LIP process as has its own flow. That said if you want to improve that standards an LIP can be opened for it.
 
-## Table of Contents
-
-- [Lens open algorithm standards](./lens-open-algorithm-standards/README.md)
+## Supported standards
