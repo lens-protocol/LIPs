@@ -17,21 +17,33 @@ References:
 - [MetadataLicenseType](../../shared-ts-interfaces/metadata-license-type.ts)
 
 ```ts
+enum ThreeDFormat {
+  gLTF = 'gLTF/GLB',
+  fbx = 'FBX',
+  vrm = 'VRM',
+  obj = 'OBJ',
+}
+
 interface ThreeDAsset {
   /**
-   * The zip url for the 3D
+   * The 3D asset url or zip
    */
-  zipUrl: string;
+  url: string;
 
   /**
    * path in extracted zip. Relative. 3D start point, must be 3D file type
    */
-  path: string;
+  zipPath?: string;
 
   /**
    * Link to web based 3D player
    */
   playerUrl: string;
+
+  /**
+   * format of the 3D object. gLTF/GLB, FBX, VRM or OBJ
+   */
+  format: ThreeDFormat;
 
   /**
    * License for the 3D item

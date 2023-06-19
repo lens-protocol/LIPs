@@ -328,12 +328,16 @@
     "3DAsset": {
       "type": "object",
       "properties": {
-        "zipUrl": {
+        "url": {
           "type": "string",
           "format": "uri"
         },
-        "path": {
-          "type": "string"
+        "zipPath": {
+          "type": "string",
+          "format": "uri"
+        },
+        "format": {
+          "enum": ["gLTF/GLB", "FBX", "VRM", "OBJ"]
         },
         "playerUrl": {
           "type": "string",
@@ -396,7 +400,7 @@
           ]
         }
       },
-      "required": ["zipUrl", "path", "playerUrl"]
+      "required": ["url", "format", "playerUrl"]
     },
     "3DMetadataDetails": {
       "type": "object",
