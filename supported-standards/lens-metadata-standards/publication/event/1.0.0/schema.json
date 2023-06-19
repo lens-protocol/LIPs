@@ -320,7 +320,7 @@
         },
         "audioType": {
           "type": "string",
-          "enum": ["MUSIC", "PODCAST", "AUDIOBOOK", "SOUNDS", "OTHER"]
+          "enum": ["MUSIC", "PODCAST", "AUDIOBOOK", "VOICENOTE", "OTHER"]
         }
       },
       "required": ["item", "type", "audioType"]
