@@ -44,14 +44,14 @@ interface LiveStreamMetadataDetails extends MetadataCommon {
   title?: string;
 
   /**
-   * unix timestamp
+   * unix timestamp (unix timestamp)
    */
-  startsAt: ISODate;
+  startsAt: number;
 
   /**
-   * unix timestamp
+   * unix timestamp (unix timestamp)
    */
-  endsAt?: ISODate;
+  endsAt?: number;
 
   /**
    * Some live stream platforms have the playback url as a separate url

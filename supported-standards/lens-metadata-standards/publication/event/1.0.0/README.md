@@ -49,14 +49,14 @@ interface EventMetadataDetails extends MetadataCommon {
   location: string | Url;
 
   /**
-   * The start time of the event iso string
+   * The start time of the event (unix timestamp)
    */
-  startsAt: ISODate;
+  startsAt: number;
 
   /**
    * The end time of the event iso string
    */
-  endsAt: ISODate;
+  endsAt: number;
 
   /**
    * The links you want to include with it

@@ -363,10 +363,10 @@
           "type": "string"
         },
         "startsAt": {
-          "type": "string"
+          "type": "number"
         },
         "endsAt": {
-          "type": "string"
+          "type": "number"
         },
         "links": {
           "type": "array",
