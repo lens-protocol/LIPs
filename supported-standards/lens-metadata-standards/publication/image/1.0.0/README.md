@@ -18,7 +18,7 @@ References:
 ```ts
 interface ImageMetadata extends MarketplaceMetadata {
   /**
-   * The JSON schema for the video
+   * The JSON schema for the image
    */
   $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/image/1.0.0/schema.json';
 
