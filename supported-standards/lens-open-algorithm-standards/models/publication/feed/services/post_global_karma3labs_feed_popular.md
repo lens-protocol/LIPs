@@ -45,7 +45,7 @@ Feed is updated every 1 hour.
 
 ## External Website
 
-https://karma3labs.com/
+[Content Discovery on Lens Protocol](https://www.notion.so/karma3labs/Content-Discovery-on-Lens-Protocol-e13aae4dcfc64532af32d74a521dbca8#c2f4192a85ae4d90b9d3bb9af20707fd)
 
 ## GitHub Repository
 
@@ -57,5 +57,5 @@ MIT License
 
 ## Global Model Data Output Location
 
-s3://karma3labs/lens-feed/popular/latest.jsonl
+s3://karma3labs/lens-feed/popular/latest.json
 
