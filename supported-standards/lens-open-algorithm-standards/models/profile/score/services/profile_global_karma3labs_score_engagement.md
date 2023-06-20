@@ -2,7 +2,7 @@
 
 ## Service ID
 
-`profile_global_karma3labs-engagement_score_1`
+`profile_global_karma3labs_engagement-score_1`
 
 ## Model Description
 
@@ -18,9 +18,9 @@ We treat each profile as a peer.
 
 Between two profiles A and B, the local trust from A to B is defined as:
 
-5 * (number of comments made by A on B's posts) +
+3 * (number of comments made by A on B's posts) +
 8 * (number of A's mirrors of B's posts) +
-(1 if A follows B, otherwise 0)
+6 * (1 if A follows B, otherwise 0)
 
 Since a follow is from an address to a profile,
 we convert the address of a follow to the primary profile of the address.

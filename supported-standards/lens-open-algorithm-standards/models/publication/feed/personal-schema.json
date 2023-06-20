@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lens.xyz/post.feed.schema.json",
+  "title": "Post Feed",
+  "description": "Ordered list of posts to be shown to users",
+  "type": "object",
+  "properties": {
+    "profileId": {
+      "type": "string",
+      "description": "ProfileId for which the posts are being recommended",
+      "pattern": "^0x[0-9a-fA-F]+$"
+    },
+    "posts": {
+      "description": "array of postIds",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "postId",
+        "pattern": "^0x[0-9a-fA-F]+$"
+      },
+      "minItems": 100,
+      "maxItems": 1000
+    }
+  },
+  "required": ["profileId", "posts"]
+}
