@@ -14,4 +14,5 @@ export enum PublicationMainFocus {
   SHORT_VIDEO = 'SHORT_VIDEO',
   THREE_D = '3D',
   STORY = 'STORY',
+  SPACES = 'SPACES',
 }
