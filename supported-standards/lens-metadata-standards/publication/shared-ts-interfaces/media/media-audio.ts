@@ -6,7 +6,8 @@ enum MediaMetadataAudioType {
   MUSIC = 'MUSIC',
   PODCAST = 'PODCAST',
   AUDIOBOOK = 'AUDIOBOOK',
-  VOICENOTE = 'VOICENOTE',
+  VOICE_NOTE = 'VOICE_NOTE',
+  SOUND = 'SOUND',
   OTHER = 'OTHER',
 }
 
