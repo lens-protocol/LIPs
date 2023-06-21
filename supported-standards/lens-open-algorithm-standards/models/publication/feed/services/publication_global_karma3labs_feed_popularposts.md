@@ -28,6 +28,7 @@ Karma3 Labs
 
 ### How the Model Should Be Used
 * The postIds in the array are in the order that they should be recommended to end-users. However, clients can decide to re-order the posts chronologically if it fits their UX better.
+* The model refreshes the feed every 1 hour
 
 ### Model Date
 

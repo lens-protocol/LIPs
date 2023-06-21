@@ -1,26 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://lens.xyz/post.feed.schema.json",
-  "title": "Post Feed",
-  "description": "Ordered list of posts to be shown to users",
+  "$id": "https://lens.xyz/publication.personal.feed.schema.json",
+  "title": "Publication Feed",
+  "description": "Ordered list of publications to be shown to users",
   "type": "object",
   "properties": {
     "profileId": {
       "type": "string",
-      "description": "ProfileId for which the posts are being recommended",
+      "description": "ProfileId for which the publications are being recommended",
       "pattern": "^0x[0-9a-fA-F]+$"
     },
-    "posts": {
-      "description": "array of postIds",
+    "publications": {
+      "description": "array of publicationIds",
       "type": "array",
       "items": {
         "type": "string",
-        "description": "postId",
-        "pattern": "^0x[0-9a-fA-F]+$"
+        "description": "publicationId",
+        "pattern": "^0x[0-9a-fA-F]+-0x[0-9a-fA-F]+$"
       },
       "minItems": 100,
       "maxItems": 1000
     }
   },
-  "required": ["profileId", "posts"]
+  "required": ["profileId", "publications"]
 }
