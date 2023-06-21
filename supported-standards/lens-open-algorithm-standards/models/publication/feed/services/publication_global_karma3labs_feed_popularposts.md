@@ -58,5 +58,5 @@ MIT License
 
 ## Global Model Data Output Location
 
-s3://karma3labs/lens-feed/popular/latest.json
+s3://karma3labs/lens-feed/popularposts/latest.json
 
