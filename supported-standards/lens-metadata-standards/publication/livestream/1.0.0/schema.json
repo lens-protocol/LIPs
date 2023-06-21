@@ -366,16 +366,16 @@
           "type": "number"
         },
         "playbackUrl": {
-          "type": "uri"
+          "type": "string"
         },
         "liveUrl": {
-          "type": "uri"
+          "type": "string"
         },
         "isLiveNowApiCall": {
-          "type": "uri"
+          "type": "string"
         },
         "mainContentFocus": {
-          "enum": ["LIVE_STREAM"]
+          "enum": ["LIVESTREAM"]
         },
         "attachments": {
           "type": "array",
@@ -388,7 +388,14 @@
           }
         }
       },
-      "required": ["id", "locale", "startsAt", "liveUrl", "mainContentFocus"]
+      "required": [
+        "id",
+        "locale",
+        "startsAt",
+        "playbackUrl",
+        "liveUrl",
+        "mainContentFocus"
+      ]
     }
   }
 }

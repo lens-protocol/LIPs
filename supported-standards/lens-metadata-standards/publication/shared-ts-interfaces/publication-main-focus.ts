@@ -10,7 +10,7 @@ export enum PublicationMainFocus {
   EVENT = 'EVENT',
   MINT = 'MINT',
   TRANSACTION = 'TRANSACTION',
-  LIVE_STREAM = 'LIVE_STREAM',
+  LIVESTREAM = 'LIVESTREAM',
   SHORT_VIDEO = 'SHORT_VIDEO',
   THREE_D = '3D',
   STORY = 'STORY',

@@ -14,7 +14,7 @@ These standard defines the metadata for a publication. This includes `POST`, `CO
 - [Event metadata standards](./event/README.md)
 - [Image metadata standards](./image/README.md)
 - [Link metadata standards](./link/README.md)
-- [LiveStream metadata standards](./live-stream/README.md)
+- [Livestream metadata standards](./livestream/README.md)
 - [Spaces metadata standards](./spaces/README.md)
 - [Story metadata standards](./story/README.md)
 - [TextOnly metadata standards](./text-only/README.md)

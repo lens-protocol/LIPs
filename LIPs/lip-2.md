@@ -41,7 +41,7 @@ Metadata v1 and v2 will work and be supported. This metadata standard will now b
 
 ## Security Considerations
 
-The only security concern is on the live stream proposal hoping to hear from some live stream web3 companies because the publication is immutable which means you need a way to know if it's still live or not so we need to flesh that out together. I proposed an API call to do this but this could lead to an attacker doing something bad maybe.
+Everything has json schemas so it should be easy to validate and make sure it is correct.
 
 ## Copyright
 

@@ -1,6 +1,6 @@
 # Live stream
 
-This holds all the standards related to the `LIVE_STREAM` publication focus.
+This holds all the standards related to the `LIVESTREAM` publication focus.
 
 ## Table of Contents
 
