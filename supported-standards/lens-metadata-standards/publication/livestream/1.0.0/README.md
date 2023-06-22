@@ -16,7 +16,7 @@ References:
 - [MediaAudio](../../shared-ts-interfaces/media/media-audio.ts)
 
 ```ts
-interface LiveStreamMetadata extends MarketplaceMetadata {
+interface LivestreamMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the livestream
    */
@@ -25,7 +25,7 @@ interface LiveStreamMetadata extends MarketplaceMetadata {
   /**
    * The metadata details for the livestream
    */
-  lens: LiveStreamMetadataDetails;
+  lens: LivestreamMetadataDetails;
 
   /**
    * If you use an appId and you only want your app to be able to publish under it,
@@ -37,7 +37,7 @@ interface LiveStreamMetadata extends MarketplaceMetadata {
   signture: string;
 }
 
-interface LiveStreamMetadataDetails extends MetadataCommon {
+interface LivestreamMetadataDetails extends MetadataCommon {
   /**
    * The livestream title
    */

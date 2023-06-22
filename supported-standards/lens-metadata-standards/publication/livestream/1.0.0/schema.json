@@ -43,7 +43,7 @@
       "format": "uri"
     },
     "lens": {
-      "$ref": "#/definitions/LiveStreamMetadataDetails"
+      "$ref": "#/definitions/LivestreamMetadataDetails"
     },
     "signture": {
       "type": "string"
@@ -332,7 +332,7 @@
       },
       "required": ["item", "type", "audioType"]
     },
-    "LiveStreamMetadataDetails": {
+    "LivestreamMetadataDetails": {
       "type": "object",
       "properties": {
         "id": {
