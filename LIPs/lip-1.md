@@ -13,7 +13,7 @@ The rapid growth and development of Lens algorithmic systems, including ML have 
 
 ## Specification
 
-You can read about all of this in the [Lens Open Algorithm Standard](../lens-open-algorithm-standards/README.md)
+You can read about all of this in the [Lens Open Algorithm Standard](/supported-standards/lens-open-algorithm-standards/README.md)
 
 ## Copyright
 
