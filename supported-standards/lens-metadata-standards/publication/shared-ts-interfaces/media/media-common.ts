@@ -10,4 +10,12 @@ export interface MediaCommon {
    * The alt tags for accessibility
    */
   altTag?: string;
+
+  /**
+   * Any attributes for the video
+   */
+  attributes?: {
+    key: string;
+    value: string;
+  }[];
 }

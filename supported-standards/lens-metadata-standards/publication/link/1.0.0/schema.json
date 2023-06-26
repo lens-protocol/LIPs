@@ -136,6 +136,21 @@
             "TBNL-ND-DTSA-NPL-Ledger",
             "TBNL-ND-ND-NPL-Ledger"
           ]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": ["key", "value"]
+          }
         }
       },
       "required": ["item", "type"]
@@ -217,6 +232,21 @@
             "TBNL-ND-DTSA-NPL-Ledger",
             "TBNL-ND-ND-NPL-Ledger"
           ]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": ["key", "value"]
+          }
         }
       },
       "required": ["item", "type"]
@@ -328,6 +358,21 @@
             "SOUNDS",
             "OTHER"
           ]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": ["key", "value"]
+          }
         }
       },
       "required": ["item", "type", "audioType"]
