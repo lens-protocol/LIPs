@@ -412,6 +412,18 @@
         "location": {
           "type": "string"
         },
+        "geographic": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            }
+          },
+          "required": ["latitude", "longitude"]
+        },
         "mainContentFocus": {
           "enum": ["CHECKING_IN"]
         },

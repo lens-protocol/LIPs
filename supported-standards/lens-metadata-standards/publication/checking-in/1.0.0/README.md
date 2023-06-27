@@ -44,6 +44,21 @@ interface CheckingInMetadataDetails extends MetadataCommon {
   location: string;
 
   /**
+   * The content for the checking in
+   */
+  geographic?: {
+    /**
+     * The latitude of the location
+     */
+    latitude: number;
+
+    /**
+     * The longitude of the location
+     */
+    longitude: number;
+  };
+
+  /**
    * Main content focus that for this publication
    */
   mainContentFocus: PublicationMainFocus.CHECKING_IN;
