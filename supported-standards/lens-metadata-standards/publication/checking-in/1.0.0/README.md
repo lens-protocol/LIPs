@@ -44,7 +44,7 @@ interface CheckingInMetadataDetails extends MetadataCommon {
   location: string;
 
   /**
-   * The content for the checking in
+   * The direct location if you wish to do so
    */
   geographic?: {
     /**
