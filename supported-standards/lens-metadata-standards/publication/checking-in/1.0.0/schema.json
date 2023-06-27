@@ -275,7 +275,8 @@
           ]
         },
         "cover": {
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "duration": {
           "type": "number"
