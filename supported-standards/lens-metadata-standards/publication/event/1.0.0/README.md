@@ -49,6 +49,21 @@ interface EventMetadataDetails extends MetadataCommon {
   location: string | Url;
 
   /**
+   * The direct location if you wish to do so
+   */
+  geographic?: {
+    /**
+     * The latitude of the location
+     */
+    latitude: number;
+
+    /**
+     * The longitude of the location
+     */
+    longitude: number;
+  };
+
+  /**
    * The start time of the event (unix timestamp)
    */
   startsAt: number;

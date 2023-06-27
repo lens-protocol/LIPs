@@ -415,6 +415,18 @@
         "location": {
           "type": "string"
         },
+        "geographic": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            }
+          },
+          "required": ["latitude", "longitude"]
+        },
         "startsAt": {
           "type": "number"
         },
@@ -424,7 +436,8 @@
         "links": {
           "type": "array",
           "items": {
-            "type": "uri"
+            "type": "string",
+            "format": "uri"
           }
         },
         "mainContentFocus": {
