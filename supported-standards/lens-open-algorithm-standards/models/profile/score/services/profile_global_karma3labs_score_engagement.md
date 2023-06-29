@@ -33,16 +33,16 @@ for the hand-curated list of 10 profiles:
 ```
    id   |       handle        
 --------+---------------------
-  73557 | chriscomrie.lens
-   3297 | levychain.lens
-      5 | stani.lens
-     36 | bradorbradley.lens
-   4231 | cristinaspinei.lens
-  89805 | goodkrak.lens
- 105878 | jamesfinnerty.lens
-  90724 | ryanfox.lens
+     13 | yoginth.lens
     142 | christina.lens
-  36284 | blackdave.lens
+     49 | mariariivari.lens
+     36 | bradorbradley.lens
+      6 | wagmi.lens
+   3297 | levychain.lens
+      9 | nicolo.lens
+     45 | sasicodes.lens
+      5 | stani.lens
+     22 | davidev.lens
 ```
 #### Alpha (pre-trust bias strength)
 
@@ -93,7 +93,7 @@ bots/sybils and new profiles lacking inbound trust tend to sink to the bottom.
 
 ## Model Interval
 
-Scores are updated every 24 hours.
+Scores are updated every 3 hours.
 
 ## Limitations (optional)
 
