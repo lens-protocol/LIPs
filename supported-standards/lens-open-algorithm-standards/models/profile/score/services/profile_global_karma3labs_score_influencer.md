@@ -2,7 +2,7 @@
 
 ## Service ID
 
-`profile_global_karma3labs_engagement-score_1`
+`profile_global_karma3labs_influencer-score_1`
 
 ## Model Description
 
@@ -20,7 +20,8 @@ Between two profiles A and B, the local trust from A to B is defined as:
 
 3 * (number of comments made by A on B's posts) +
 8 * (number of A's mirrors of B's posts) +
-6 * (1 if A follows B, otherwise 0)
+6 * (1 if A follows B, otherwise 0) + 
+12 * (number of collects by A of B's posts)
 
 Since a follow is from an address to a profile,
 we convert the address of a follow to the primary profile of the address.
@@ -83,11 +84,11 @@ bots/sybils and new profiles lacking inbound trust tend to sink to the bottom.
 
 ### Model Date
 
-2023-04-25
+2023-06-29
 
 ## Model Versions
 
-### Version 1 (2023-04-25)
+### Version 1 (2023-06-29)
 
 * Initial version.
 
@@ -111,4 +112,4 @@ MIT License
 
 ## Global Model Data Output Location
 
-s3://karma3labs/eigentrust-lens-engagement/latest.jsonl
+s3://karma3labs/eigentrust-lens-influencer/latest.jsonl
