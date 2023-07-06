@@ -47,13 +47,13 @@ Every EOA wallet will have the Profile Guardian enabled by default. Meaning that
 - **burn(uint256 profileId)**
   - Reverts if owner of `profileId` has Profile Guardian enabled
 
-To use any of the functions mentioned above, the user must explicitly trigger the safety layer disabling by executing the `DANGER__disableProfileGuardian` transaction, and wait for a 7-day Security Cooldown Period until the Profile Guardian becomes effectively disabled.
+To use any of the functions mentioned above, the user must explicitly trigger the safety layer disabling by executing the `DANGER__disableTokenGuardian` transaction, and wait for a 7-day Security Cooldown Period until the Profile Guardian becomes effectively disabled.
 
 We specifically chose the `DANGER` prefix to draw users' attention and lower the risk of executing this transaction unintentionally.
 
 After the Profile Guardian is effectively disabled, the user can use all the functions mentioned above without the listed restrictions.
 
-The user can enable the Profile Guardian back by executing `enableProfileGuardian` transaction, it will become effective immediately after the transaction is confirmed.
+The user can enable the Profile Guardian back by executing `enableTokenGuardian` transaction, it will become effective immediately after the transaction is confirmed.
 
 ### 3. Profile Guardian does not apply to non-EOA addresses
 
