@@ -28,7 +28,7 @@ In order to function there are 3 elements:
 
 ### Lens Share Registry
 
-Define a Lens ecosystem apps registry that allows a builder to register their app details such as name, icon, supported platforms, app-specific URL formats, etc.
+Define a Lens ecosystem apps registry that allows builders to register their apps details such as name, icon, supported platforms, app-specific URL formats, etc.
 
 In order to do that this proposal defines the JSON schema of a Lens App Manifest that must be used to register a new app.
 
@@ -39,20 +39,37 @@ An example:
   "appId": "foobar",
   "name": "Foo Bar",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-  "icon": "https://example.com/icon.png",
+  "platform": "web",
+  "icon": {
+    "url": "https://example.com/icon.png",
+    "background": "#000"
+  },
   "image": "https://example.com/image.png",
   "routes": {
-    "home": "com.foobar://home",
-    "profile": "com.foobar://user/:handle",
-    "publication": "com.foobar://publication/:id"
+    "home": "https://example.com/",
+    "profile": {
+      "url": "https://example.com/u/:handle"
+    },
+    "publication": {
+      "url": "https://example.com/p/:id",
+      "supports": [
+        "ARTICLE",
+        "AUDIO",
+        "EMBED",
+        "IMAGE",
+        "LINK",
+        "TEXT_ONLY",
+        "VIDEO"
+      ]
+    }
   },
-  "tags": ["video", "audio", "text"]
+  "twitter": "example_com"
 }
 ```
 
 The `:handle` and `:id` tokens represent placeholder for where the app expect Profile handles and Publication Ids. The specification could be extended to support Profile Ids if need to.
 
-The app manifest should be submitted as PRs to the registry repository and there should be a process in place to validate and approve new apps. See proposed [schema](./app-manifest-schema.json).
+App Manifest can be added by submitting a PRs to the registry repository and there should be a process in place to validate and approve new apps. See proposed [schema](./app-manifest-schema.json).
 
 ### Lens Share Link
 
