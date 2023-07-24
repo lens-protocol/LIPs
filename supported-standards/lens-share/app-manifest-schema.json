@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "appId": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 16,
+      "pattern": "^[a-z0-9]+$",
+      "description": "A unique project identifier. If your project includes 2+ apps (e.g. web and mobile), define a manifest for each app and use the same `appId` for all of them. If you are specifying an `appId` as part of your Publication Metadata, it must match this value."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 36,
+      "description": "A human readable name for the app/project."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "A brief description of the app/project."
+    },
+    "platform": {
+      "type": "string",
+      "enum": ["web", "mobile"],
+      "description": "The supported platform."
+    },
+    "icon": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "The URL to the app icon. Favour SVGs over rasterized formats. If rasterized ensures it renders sharp at 192x192 resolution."
+            },
+            {
+              "type": "string",
+              "pattern": "^\\/icons\\/",
+              "description": "The absolute path for an icon hosted on this web app."
+            }
+          ]
+        },
+        "background": {
+          "type": "string",
+          "pattern": "^#([0-9a-fA-F]{3}){1,2}$",
+          "description": "A CSS color in RGB hexadecimal notation (e.g. #f09, #ff0099)"
+        }
+      },
+      "required": ["url", "background"],
+      "additionalProperties": false
+    },
+    "routes": {
+      "type": "object",
+      "properties": {
+        "home": {
+          "type": "string",
+          "format": "uri",
+          "description": "The project home page. It will be used as attribution fallback in case the a link shared with this app cannot be opened by the user's device (e.g. link generated from a mobile-only app but opened with a desktop browser)."
+        },
+        "profile": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "\\:handle",
+              "description": "The `:handle` placeholder will be replaced with the full profile handle inclusive of `.lens` suffix when relevant (e.g. `lensapi.lens`, `lensprotocol`)."
+            }
+          },
+          "required": ["url"],
+          "additionalProperties": false,
+          "description": "The app specific profile route details."
+        },
+        "publication": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "\\:id",
+              "description": "The `:id` placeholder will be replaced with Publication ID (e.g. `0x01-01`, `0x01-42-DA-ababab`)."
+            },
+            "supports": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "ARTICLE",
+                  "AUDIO",
+                  "EMBED",
+                  "IMAGE",
+                  "LINK",
+                  "TEXT_ONLY",
+                  "VIDEO"
+                ],
+                "description": "Publication main focus. Matches Publication Metadata spec."
+              },
+              "description": "A list of supported publication main focuses. If a given publication main focus is present in this list, the app will be shown in the options to open the publication with."
+            }
+          },
+          "required": ["url", "supports"],
+          "additionalProperties": false,
+          "description": "The app specific publication route details."
+        }
+      },
+      "required": ["home"],
+      "additionalProperties": false
+    },
+    "twitter": {
+      "type": "string",
+      "description": "The Twitter handle of the app/project. Used for attribution in Twitter Card meta tags."
+    }
+  },
+  "required": ["appId", "name", "description", "platform", "icon", "routes"],
+  "additionalProperties": false
+}
