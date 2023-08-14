@@ -45,7 +45,7 @@
     "lens": {
       "$ref": "#/definitions/StoryMetadataDetails"
     },
-    "signture": {
+    "signature": {
       "type": "string"
     }
   },
@@ -415,6 +415,24 @@
         },
         "mainContentFocus": {
           "enum": ["STORY"]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["Boolean", "Date", "Number", "String", "JSON"]
+              },
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "value": "string"
+              }
+            },
+            "required": ["type", "key", "value"]
+          }
         }
       },
       "required": ["id", "locale", "mainContentFocus"]

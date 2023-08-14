@@ -45,7 +45,7 @@
     "lens": {
       "$ref": "#/definitions/3DMetadataDetails"
     },
-    "signture": {
+    "signature": {
       "type": "string"
     }
   },
@@ -463,6 +463,24 @@
         },
         "content": {
           "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["Boolean", "Date", "Number", "String", "JSON"]
+              },
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "value": "string"
+              }
+            },
+            "required": ["type", "key", "value"]
+          }
         },
         "locale": {
           "type": "string"

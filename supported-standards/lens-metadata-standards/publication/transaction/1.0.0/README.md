@@ -17,16 +17,16 @@ References:
 
 ```ts
 enum TransactionMetadataType {
-  ERC721 = 'ERC721',
-  ERC20 = 'ERC20',
-  OTHER = 'OTHER',
+  ERC721 = "ERC721",
+  ERC20 = "ERC20",
+  OTHER = "OTHER",
 }
 
 interface TransactionMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the transaction
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/transaction/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/transaction/1.0.0/schema.json";
 
   /**
    * The metadata details for the transaction
@@ -40,7 +40,7 @@ interface TransactionMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface TransactionMetadataDetails extends MetadataCommon {

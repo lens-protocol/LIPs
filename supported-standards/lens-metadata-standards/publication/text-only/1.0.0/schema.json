@@ -45,7 +45,7 @@
     "lens": {
       "$ref": "#/definitions/TextOnlyMetadataDetails"
     },
-    "signture": {
+    "signature": {
       "type": "string"
     }
   },
@@ -411,6 +411,24 @@
         },
         "mainContentFocus": {
           "enum": ["TEXT_ONLY"]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["Boolean", "Date", "Number", "String", "JSON"]
+              },
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "value": "string"
+              }
+            },
+            "required": ["type", "key", "value"]
+          }
         }
       },
       "required": ["id", "locale", "content", "mainContentFocus"]
