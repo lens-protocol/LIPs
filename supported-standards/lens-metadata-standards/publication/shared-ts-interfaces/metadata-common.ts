@@ -1,10 +1,37 @@
-import { AppId, Locale, Markdown } from './type-alias';
+import { AppId, Locale, Markdown } from "./type-alias";
 
 enum PublicationContentWarning {
-  NSFW = 'NSFW',
-  SENSITIVE = 'SENSITIVE',
-  SPOILER = 'SPOILER',
+  NSFW = "NSFW",
+  SENSITIVE = "SENSITIVE",
+  SPOILER = "SPOILER",
 }
+
+enum MetadataAttributeType {
+  Boolean = "Boolean",
+  Date = "Date",
+  Number = "Number",
+  String = "String",
+  JSON = "JSON",
+}
+
+type MetadataAttribute = {
+  /**
+   * The type of the attribute
+   */
+  type: MetadataAttributeType;
+
+  /**
+   * The unique identifier
+   */
+  key: String;
+
+  /**
+   * The attribute serialized value
+   *
+   * It's consumer responsibility to deserialize it based on the `type` field
+   */
+  value: String;
+};
 
 export interface MetadataCommon {
   /**
@@ -17,6 +44,13 @@ export interface MetadataCommon {
    * The content of a publication.
    */
   content?: Markdown;
+
+  /**
+   * This is an arbitrary bag of attributes that can be used to store any kind of metadata that is not currently supported by the standard.
+   *
+   * Over time, common attributes will be added to the standard and their usage as arbitrary attributes will be discouraged.
+   */
+  attributes?: MetadataAttribute[];
 
   /**
    * IOS 639-1 language code aka en or it and ISO 3166-1 alpha-2 region code aka US or IT aka en-US or it-IT

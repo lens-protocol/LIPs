@@ -20,7 +20,7 @@ interface EventMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the event
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/event/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/event/1.0.0/schema.json";
 
   /**
    * The metadata details for the event
@@ -34,7 +34,7 @@ interface EventMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface EventMetadataDetails extends MetadataCommon {

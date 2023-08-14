@@ -20,7 +20,7 @@ interface StoryMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the video
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/story/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/story/1.0.0/schema.json";
 
   /**
    * The metadata details for the story
@@ -34,7 +34,7 @@ interface StoryMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface StoryMetadataDetails extends MetadataCommon {

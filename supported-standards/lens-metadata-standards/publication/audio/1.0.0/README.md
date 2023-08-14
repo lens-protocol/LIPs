@@ -20,7 +20,7 @@ interface AudioMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the audio
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/audio/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/audio/1.0.0/schema.json";
 
   /**
    * The metadata details for the image
@@ -34,7 +34,7 @@ interface AudioMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface AudioMetadataDetails extends MetadataCommon {
@@ -72,6 +72,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
     "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "AUDIO",
+    "title": "The audio title",
     "content": "My Audio Content",
     "tags": ["audio"],
     "audio": {

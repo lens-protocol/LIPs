@@ -45,7 +45,7 @@
     "lens": {
       "$ref": "#/definitions/ImageMetadataDetails"
     },
-    "signture": {
+    "signature": {
       "type": "string"
     }
   },
@@ -423,6 +423,27 @@
               { "$ref": "#/definitions/MediaVideo" },
               { "$ref": "#/definitions/MediaAudio" }
             ]
+          }
+        },
+        "title": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["Boolean", "Date", "Number", "String", "JSON"]
+              },
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "value": "string"
+              }
+            },
+            "required": ["type", "key", "value"]
           }
         }
       },

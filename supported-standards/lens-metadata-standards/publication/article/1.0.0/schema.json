@@ -45,7 +45,7 @@
     "lens": {
       "$ref": "#/definitions/ArticleMetadataDetails"
     },
-    "signture": {
+    "signature": {
       "type": "string"
     }
   },

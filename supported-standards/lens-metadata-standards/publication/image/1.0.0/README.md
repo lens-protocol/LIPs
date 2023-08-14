@@ -20,7 +20,7 @@ interface ImageMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the image
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/image/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/image/1.0.0/schema.json";
 
   /**
    * The metadata details for the image
@@ -34,7 +34,7 @@ interface ImageMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface ImageMetadataDetails extends MetadataCommon {
@@ -71,6 +71,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
     "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "IMAGE",
+    "title": "My Image Title",
     "content": "My Image Content",
     "tags": ["image"],
     "image": {

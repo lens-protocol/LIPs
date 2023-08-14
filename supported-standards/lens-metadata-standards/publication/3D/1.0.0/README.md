@@ -18,10 +18,10 @@ References:
 
 ```ts
 enum ThreeDFormat {
-  gLTF = 'gLTF/GLB',
-  fbx = 'FBX',
-  vrm = 'VRM',
-  obj = 'OBJ',
+  gLTF = "gLTF/GLB",
+  fbx = "FBX",
+  vrm = "VRM",
+  obj = "OBJ",
 }
 
 interface ThreeDAsset {
@@ -55,7 +55,7 @@ interface ThreeDMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the 3D
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/3D/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/3D/1.0.0/schema.json";
 
   /**
    * The metadata details for the 3D publication
@@ -69,7 +69,7 @@ interface ThreeDMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface ThreeDMetadataDetails extends MetadataCommon {

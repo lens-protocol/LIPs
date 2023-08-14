@@ -20,7 +20,7 @@ interface EmbedMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the embed
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/embed/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/embed/1.0.0/schema.json";
 
   /**
    * The metadata details for the image
@@ -34,7 +34,7 @@ interface EmbedMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface EmbedMetadataDetails extends MetadataCommon {

@@ -20,7 +20,7 @@ interface VideoMetadata extends MarketplaceMetadata {
   /**
    * The JSON schema for the video
    */
-  $schema: 'https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/video/1.0.0/schema.json';
+  $schema: "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/publication/video/1.0.0/schema.json";
 
   /**
    * The metadata details for the video
@@ -34,7 +34,7 @@ interface VideoMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signture: string;
+  signature?: string;
 }
 
 interface VideoMetadataDetails extends MetadataCommon {
@@ -76,6 +76,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
     "id": "1234",
     "locale": "en-US",
     "mainContentFocus": "VIDEO",
+    "title": "My Video",
     "content": "My Video Content",
     "tags": ["video"],
     "video": {

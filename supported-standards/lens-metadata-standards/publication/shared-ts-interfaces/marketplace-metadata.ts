@@ -1,9 +1,9 @@
-import { Markdown, Url } from './type-alias';
+import { Markdown, Url } from "./type-alias";
 
 enum PublicationMetadataDisplayType {
-  number = 'number',
-  string = 'string',
-  date = 'date',
+  number = "number",
+  string = "string",
+  date = "date",
 }
 
 interface PublicationMetadataAttribute {
@@ -30,8 +30,7 @@ export interface MarketplaceMetadata {
   name?: string;
 
   /**
-   * These are the attributes for the item, which will show up on the OpenSea and others NFT trading websites on the 
-  item.
+   * These are the attributes for the item, which will show up on the OpenSea and others NFT trading websites on the item.
    */
   attributes?: PublicationMetadataAttribute[];
 
