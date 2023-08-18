@@ -35,7 +35,7 @@ interface SpacesMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signature?: string;
+  signature?: Signature;
 }
 
 interface SpacesMetadataDetails extends MetadataCommon {
