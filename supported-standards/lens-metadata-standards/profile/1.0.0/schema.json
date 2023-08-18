@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "https://raw.githubusercontent.com/lens-protocol/LIPs/feat/metadata-standards/lens-metadata-standards/profile/1.0.0/schema.json"
+    },
+    "lens": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The profile display name."
+        },
+        "bio": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The profile bio as markdown."
+        },
+        "picture": {
+          "type": "string",
+          "minLength": 6,
+          "format": "uri",
+          "description": "The profile picture."
+        },
+        "coverPicture": {
+          "type": "string",
+          "minLength": 6,
+          "format": "uri",
+          "description": "The profile cover picture."
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MetadataAttribute"
+          },
+          "minItems": 1,
+          "description": "An optional bag of attributes that can be used to store any kind of metadata that is not currently supported by the standard. Over time, common attributes will be added to the standard and their usage as arbitrary attributes will be discouraged."
+        }
+      },
+      "additionalProperties": false,
+      "description": "The Lens specific metadata details."
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A cryptographic signature of the Lens metadata."
+    }
+  },
+  "required": ["$schema", "lens"],
+  "additionalProperties": false,
+  "$defs": {
+    "MetadataAttribute": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "Boolean"
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The attribute's unique identifier."
+            },
+            "value": {
+              "type": "string",
+              "enum": ["true", "false"],
+              "description": "A boolean value serialized as string.  It's consumer responsibility to parse it."
+            }
+          },
+          "required": ["type", "key", "value"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "Date"
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The attribute's unique identifier."
+            },
+            "value": {
+              "type": "string",
+              "format": "date-time",
+              "description": "A valid ISO 8601 date string.  It's consumer responsibility to parse it."
+            }
+          },
+          "required": ["type", "key", "value"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "Number"
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The attribute's unique identifier."
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "A valid JS number serialized as string. It's consumer responsibility to parse it."
+            }
+          },
+          "required": ["type", "key", "value"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "String"
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The attribute's unique identifier."
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "A string value."
+            }
+          },
+          "required": ["type", "key", "value"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "const": "JSON"
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The attribute's unique identifier."
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "A valid JSON string. It's consumer responsibility to parse it."
+            }
+          },
+          "required": ["type", "key", "value"],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

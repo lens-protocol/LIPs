@@ -9,6 +9,7 @@ The JSON schema can be found [here](./schema.json).
 References:
 
 - [MarketplaceMetadata](../../shared-ts-interfaces/marketplace-metadata.ts)
+- [MetadataAttribute](../../../shared-ts-interfaces/metadata-attribute.ts)
 - [MetadataCommon](../../shared-ts-interfaces/metadata-common.ts)
 - [PublicationMainFocus](../../shared-ts-interfaces/publication-main-focus.ts)
 - [MediaVideo](../../shared-ts-interfaces/media/media-video.ts)
@@ -69,7 +70,7 @@ interface ThreeDMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signature?: string;
+  signature?: Signature;
 }
 
 interface ThreeDMetadataDetails extends MetadataCommon {
@@ -104,7 +105,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "image": "https://myimage.com/image.png",
   "animation_url": "https://3d.com/3d.html",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "locale": "en-US",
     "mainContentFocus": "3D",
     "content": "My 3D Asset",

@@ -9,6 +9,7 @@ The JSON schema can be found [here](./schema.json).
 References:
 
 - [MarketplaceMetadata](../../shared-ts-interfaces/marketplace-metadata.ts)
+- [MetadataAttribute](../../../shared-ts-interfaces/metadata-attribute.ts)
 - [MetadataCommon](../../shared-ts-interfaces/metadata-common.ts)
 - [PublicationMainFocus](../../shared-ts-interfaces/publication-main-focus.ts)
 - [MediaVideo](../../shared-ts-interfaces/media/media-video.ts)
@@ -34,7 +35,7 @@ interface ArticleMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signature?: string;
+  signature?: Signature;
 }
 
 interface ArticleMetadataDetails extends MetadataCommon {
@@ -73,8 +74,8 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "attributes": [],
   "image": "https://myarticle.com/image.png",
   "lens": {
+    "id": "bb8d69b3-4fda-4b41-9c60-2c22652c0173",
     "title": "My Article",
-    "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "ARTICLE",
     "content": "My Article Content",

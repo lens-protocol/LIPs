@@ -1,25 +1,25 @@
-import { MetadataLicenseType } from '../metadata-license-type';
-import { Url } from '../type-alias';
-import { MediaCommon } from './media-common';
+import { MetadataLicenseType } from "../metadata-license-type";
+import { URI } from "../type-alias";
+import { MediaCommon } from "./media-common";
 
 enum MediaMetadataAudioType {
-  MUSIC = 'MUSIC',
-  PODCAST = 'PODCAST',
-  AUDIOBOOK = 'AUDIOBOOK',
-  VOICE_NOTE = 'VOICE_NOTE',
-  SOUND = 'SOUND',
-  OTHER = 'OTHER',
+  MUSIC = "MUSIC",
+  PODCAST = "PODCAST",
+  AUDIOBOOK = "AUDIOBOOK",
+  VOICE_NOTE = "VOICE_NOTE",
+  SOUND = "SOUND",
+  OTHER = "OTHER",
 }
 
 enum MediaAudioMimeType {
-  WAV = 'audio/wav',
-  WAV_VND = 'audio/vnd.wave',
-  MP3 = 'audio/mpeg',
-  OGG_AUDIO = 'audio/ogg',
-  MP4_AUDIO = 'audio/mp4',
-  AAC = 'audio/aac',
-  WEBM_AUDIO = 'audio/webm',
-  FLAC = 'audio/flac',
+  WAV = "audio/wav",
+  WAV_VND = "audio/vnd.wave",
+  MP3 = "audio/mpeg",
+  OGG_AUDIO = "audio/ogg",
+  MP4_AUDIO = "audio/mp4",
+  AAC = "audio/aac",
+  WEBM_AUDIO = "audio/webm",
+  FLAC = "audio/flac",
 }
 
 export interface MediaAudio extends MediaCommon {
@@ -71,5 +71,5 @@ export interface MediaAudio extends MediaCommon {
   /**
    * The lyrics for the audio
    */
-  lyrics?: Url | undefined | null;
+  lyrics?: URI | undefined | null;
 }

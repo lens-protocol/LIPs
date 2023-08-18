@@ -9,6 +9,7 @@ The JSON schema can be found [here](./schema.json).
 References:
 
 - [MarketplaceMetadata](../../shared-ts-interfaces/marketplace-metadata.ts)
+- [MetadataAttribute](../../../shared-ts-interfaces/metadata-attribute.ts)
 - [MetadataCommon](../../shared-ts-interfaces/metadata-common.ts)
 - [PublicationMainFocus](../../shared-ts-interfaces/publication-main-focus.ts)
 - [MediaVideo](../../shared-ts-interfaces/media/media-video.ts)
@@ -34,7 +35,7 @@ interface EventMetadata extends MarketplaceMetadata {
    * If the signature does not match what we have in our mappings it will not be surfaced
    * in the API.
    */
-  signature?: string;
+  signature?: Signature;
 }
 
 interface EventMetadataDetails extends MetadataCommon {
@@ -46,7 +47,7 @@ interface EventMetadataDetails extends MetadataCommon {
   /**
    * Where the event is in clear text
    */
-  location: string | Url;
+  location: string | URI;
 
   /**
    * The direct location if you wish to do so
@@ -76,7 +77,7 @@ interface EventMetadataDetails extends MetadataCommon {
   /**
    * The links you want to include with it
    */
-  links?: Url[];
+  links?: URI[];
 
   /**
    * Main content focus that for this publication
@@ -103,7 +104,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "image": "https://myimage.com/image.png",
   "external_url": "https://myevent.com",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "content": "Come to my cool virtual event",
     "locale": "en-US",
     "mainContentFocus": "EVENT",

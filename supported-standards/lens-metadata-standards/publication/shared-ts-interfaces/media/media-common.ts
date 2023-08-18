@@ -1,10 +1,10 @@
-import { Url } from '../type-alias';
+import { URI } from "../type-alias";
 
 export interface MediaCommon {
   /**
    * The item is the url to the media
    */
-  item: Url;
+  item: URI;
 
   /**
    * The alt tags for accessibility
