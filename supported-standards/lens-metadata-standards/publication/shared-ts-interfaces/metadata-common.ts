@@ -1,3 +1,4 @@
+import { MetadataAttribute } from "../../shared-ts-interfaces/metadata-attribute";
 import { AppId, Locale, Markdown } from "./type-alias";
 
 enum PublicationContentWarning {
@@ -5,33 +6,6 @@ enum PublicationContentWarning {
   SENSITIVE = "SENSITIVE",
   SPOILER = "SPOILER",
 }
-
-enum MetadataAttributeType {
-  Boolean = "Boolean",
-  Date = "Date",
-  Number = "Number",
-  String = "String",
-  JSON = "JSON",
-}
-
-type MetadataAttribute = {
-  /**
-   * The type of the attribute
-   */
-  type: MetadataAttributeType;
-
-  /**
-   * The unique identifier
-   */
-  key: String;
-
-  /**
-   * The attribute serialized value
-   *
-   * It's consumer responsibility to deserialize it based on the `type` field
-   */
-  value: String;
-};
 
 export interface MetadataCommon {
   /**

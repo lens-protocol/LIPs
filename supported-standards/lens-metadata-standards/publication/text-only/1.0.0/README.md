@@ -9,6 +9,7 @@ The JSON schema can be found [here](./schema.json).
 References:
 
 - [MarketplaceMetadata](../../shared-ts-interfaces/marketplace-metadata.ts)
+- [MetadataAttribute](../../../shared-ts-interfaces/metadata-attribute.ts)
 - [MetadataCommon](../../shared-ts-interfaces/metadata-common.ts)
 - [PublicationMainFocus](../../shared-ts-interfaces/publication-main-focus.ts)
 - [MediaVideo](../../shared-ts-interfaces/media/media-video.ts)
