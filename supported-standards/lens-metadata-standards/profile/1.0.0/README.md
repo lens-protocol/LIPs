@@ -47,7 +47,12 @@ interface ProfileMetadataDetails {
   bio?: Markdown;
 
   /**
-   * Cover picture location
+   * The profile picture location
+   */
+  picture?: URI;
+
+  /**
+   * The profile cover picture location
    */
   coverPicture?: URI;
 

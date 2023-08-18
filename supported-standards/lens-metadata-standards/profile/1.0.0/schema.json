@@ -19,11 +19,17 @@
           "minLength": 1,
           "description": "The profile bio as markdown."
         },
+        "picture": {
+          "type": "string",
+          "minLength": 6,
+          "format": "uri",
+          "description": "The profile picture."
+        },
         "coverPicture": {
           "type": "string",
           "minLength": 6,
           "format": "uri",
-          "description": "The profile cover picture"
+          "description": "The profile cover picture."
         },
         "attributes": {
           "type": "array",
