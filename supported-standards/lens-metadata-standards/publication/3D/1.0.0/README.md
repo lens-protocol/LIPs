@@ -105,7 +105,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "image": "https://myimage.com/image.png",
   "animation_url": "https://3d.com/3d.html",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "locale": "en-US",
     "mainContentFocus": "3D",
     "content": "My 3D Asset",

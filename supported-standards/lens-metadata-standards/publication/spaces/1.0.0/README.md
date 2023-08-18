@@ -79,7 +79,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "attributes": [],
   "image": "https://myspaces.com/image.png",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "locale": "en-US",
     "mainContentFocus": "SPACES",
     "content": "Come join the spaces tomorrow at 12pm EST",

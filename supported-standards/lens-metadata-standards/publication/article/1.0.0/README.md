@@ -74,8 +74,8 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "attributes": [],
   "image": "https://myarticle.com/image.png",
   "lens": {
+    "id": "bb8d69b3-4fda-4b41-9c60-2c22652c0173",
     "title": "My Article",
-    "metadata_id": "1234",
     "locale": "en-US",
     "mainContentFocus": "ARTICLE",
     "content": "My Article Content",

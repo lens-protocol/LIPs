@@ -71,7 +71,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "image": "https://myimage.com/image.png",
   "external_url": "https://mint-link.com",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "content": "Stand with crypto",
     "mintLink": "https://zora.co/collect/0x9d90669665607f08005cae4a7098143f554c59ef/39626",
     "locale": "en-US",

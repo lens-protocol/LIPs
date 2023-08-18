@@ -59,18 +59,18 @@ interface LivestreamMetadataDetails extends MetadataCommon {
    * If you do not liveUrl and playbackUrl should just be the same to avoid
    * confusion with optional fields
    */
-  playbackUrl: Url;
+  playbackUrl: URI;
 
   /**
    * Some livestream platforms have the live url as a separate url
    */
-  liveUrl: Url;
+  liveUrl: URI;
 
   /**
    * The data can not be changed so you can put in an API endpoint to know
    * if it is still live or not for clients to be able to check
    */
-  isLiveNowApiCall?: Url;
+  isLiveNowApiCall?: URI;
 
   /**
    * Main content focus that for this publication
@@ -119,7 +119,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "external_url": "https://livestream.com",
   "animation_url": "https://playbackurl.com/trailer.mp4",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "content": "Come to my livestream tonight",
     "locale": "en-US",
     "mainContentFocus": "LIVESTREAM",

@@ -74,7 +74,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "image": "https://myimage.com/image.png",
   "animation_url": "https://myvideo.com/video.mp4",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "locale": "en-US",
     "mainContentFocus": "VIDEO",
     "title": "My Video",
@@ -115,7 +115,7 @@ Must be under 2 minutes.
   "image": "https://myimage.com/image.png",
   "animation_url": "https://myvideo.com/video.mp4",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "locale": "en-US",
     "mainContentFocus": "SHORT_VIDEO",
     "content": "My Short Video Content",

@@ -9,10 +9,10 @@ enum PublicationContentWarning {
 
 export interface MetadataCommon {
   /**
-   * The metadata lens_id can be anything but if your uploading to IPFS
+   * The metadata id can be anything but if your uploading to IPFS
    * you will want it to be random.. using uuid could be an option!
    */
-  metadata_id: string;
+  id: string;
 
   /**
    * The content of a publication.

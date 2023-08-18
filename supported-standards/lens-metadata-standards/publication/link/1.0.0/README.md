@@ -69,7 +69,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
   "attributes": [],
   "image": "https://mynftimage.com/image.png",
   "lens": {
-    "id": "1234",
+    "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "sharingLink": "https://mylink.com",
     "content": "My link content",
     "locale": "en-US",
