@@ -49,7 +49,7 @@ interface ProfileMetadataDetails {
   /**
    * Cover picture location
    */
-  cover_picture?: URI;
+  coverPicture?: URI;
 
   /**
    * Any custom attributes can be added here to save state for a profile
@@ -74,7 +74,7 @@ Will use all the fields but remember a lot are optional you can use the JSON sch
     "id": "1030ee6e-51cb-4a09-a74a-abdccc6ef890",
     "name": "Bob",
     "bio": "I am a cool guy",
-    "cover_picture": "https://myimage.com/image.png",
+    "coverPicture": "https://myimage.com/image.png",
     "attributes": [
       {
         "type": "Date",
