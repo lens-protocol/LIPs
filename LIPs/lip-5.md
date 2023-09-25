@@ -31,7 +31,7 @@ Renaming profiles to networks widely supports the ethos of users owning their ne
 
 ## Backwards Compatibility
 
-Will be executed with lens v2 upgrade which already has some breaking changes.
+It will be executed with lens v2 upgrade, which already has some breaking changes.
 
 ## Security Considerations
 
