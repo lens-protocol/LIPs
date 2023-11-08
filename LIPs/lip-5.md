@@ -1,7 +1,7 @@
 ---
 title: Profile Guardian Tied to ERC 6551 Wallet
 description: This LIP proposes to tie the Profile Guardian to an Ethereum Request for Comment (ERC 6551 wallet allowing users to disable it for individual profiles without affecting others
-author: @DanIsNearby
+author: DanIsNearby
 status: Draft
 type: Protocol
 category: Contracts
