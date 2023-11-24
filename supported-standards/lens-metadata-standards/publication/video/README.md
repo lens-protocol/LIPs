@@ -4,4 +4,4 @@ This holds all the standards related to the `VIDEO` and `SHORT_VIDEO` publicatio
 
 ## Table of Contents
 
-- [Video standard 1.0.0](./1.0.0/README.md)
+- [Video standard 3.0.0](./3.0.0/README.md)
