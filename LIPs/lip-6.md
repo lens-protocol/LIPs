@@ -1,7 +1,7 @@
 ---
-title: Whitelist $pointless token for paid collects and tipping on lens
-description: Whitelist $pointless token for paid collects and tipping on lens
-author: @lens/sydney_bro
+title: Whitelist pointless token for paid collects and tipping on lens
+description: Whitelist pointless token for paid collects and tipping on lens
+author: lens/sydney_bro
 status: Draft
 type: Protocol
 category: Contracts
