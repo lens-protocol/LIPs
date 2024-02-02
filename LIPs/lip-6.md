@@ -21,13 +21,13 @@ $pointless was airdropped to all wallets that held a lens profile NFT on 17th De
 
 ## Specification
 
-Ticker: pointless
-CA: 0x9B8cc6320F22325759B7D2CA5CD27347bB4eCD86
-Decimals: 18
-Max supply: 1 Trillion
-Chain: Polygon
+Ticker: pointless  
+CA: 0x9B8cc6320F22325759B7D2CA5CD27347bB4eCD86  
+Decimals: 18  
+Max supply: 1 Trillion  
+Chain: Polygon  
 
-It's a OpenZeppelin standard ERC-20 token.
+It's a OpenZeppelin standard ERC-20 token.  
 
 ## Copyright
 
