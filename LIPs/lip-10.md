@@ -1,78 +1,60 @@
 ---
-title: <The LIP title is a few words, not a complete sentence>
-description: <Description is one full (short) sentence>
-author: <a comma separated list of the author's or authors' name + GitHub username (in parenthesis), or name and email (in angle brackets).  Example, FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
-discussions-to: <URL>
+title: <Open Communities Standard>
+description: <A unified standard for creating and managing Communities which allows using them in an interoperable manner across the Lens ecosystem.>
+author: <Radom Potential (@random-potential)>
 status: Draft
-type: <Protocol, Lens Metadata Standard, or Lens Open Algorithm Standard>
-category: <Contracts, API, SDK> # Only required for Protocol. Otherwise, remove this field.
-created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-requires: <LIP number(s)> # Only required when you reference an LIP which is also dependent on this to work. Otherwise, remove this field.
+type: <Lens Metadata Standard>
+created: <2024-02-18>
 ---
 
 ## Abstract
 
-<!--
-  The Abstract is a multi-sentence (short paragraph) technical summary. This should be a very terse and human-readable version of the specification section. Someone should be able to read only the abstract to get the gist of what this specification does.
-
-  TODO: Remove this comment before submitting
--->
+Lens Communities (also called Channels, Groups or Clubs) is one of key Lens functionalities. They provide like-minded individuals with a place to discuss specific topics they are interested in. This LIP proposes a unified standard (the Open Community Standard) for creating and managing Communities which allows using them in an interoperable way across the Lens ecosystem.
 
 ## Motivation
 
-<!--
-  This section is optional.
+Currently, numerous Lens apps (Phaver, Orb, Lenspeer and soon Hey) each offer different implementations of Communities with significant part of their functionalities isolated within the parent app. This results in fragmented user silos and makes navigating the ecosystem confusing, especially for newcomers, as interoperability levels can differ from app to app in various ways.
 
-  The motivation section should include a description of any nontrivial problems the LIP solves. It should not describe how the LIP solves those problems, unless it is not immediately obvious. It should not describe why the LIP should be made into a standard, unless it is not immediately obvious.
+Overall, it can be detrimental to growth and adoption rates, especially in the current stage of ecosystem development, where network effects and joint efforts to expand the shared graph are crucial.
 
-  With a few exceptions, external links are not allowed. If you feel that a particular resource would demonstrate a compelling case for your LIP, then save it as a printer-friendly PDF, put it in the assets folder, and link to that copy.
+Interoperability of current implementations is possible and exists on some limited level. However, it is not sufficient, and increasing it would need active coordination between all involved parties, making it ever harder to maintain as the number of apps grows.
 
-  TODO: Remove this comment before submitting
--->
+To address all that, a unified standard for creating and managing Communities in a way that allows interoperability between apps is needed. It will ensure apps have a straightforward way to offer Communities which are accessible from any other app that supports the same standard.
+
+Apps might still choose to have isolated Communities, however, an option to create interoperable ones is crucial for the ecosystem growth. In the longer run, users will decide which model (app gated or interoperable) will prevail.
+
+Finally, ensuring openness and standardization of such a key functionality goes well in line with Lens philosophy and values.
 
 ## Specification
 
-<!--
-  The Specification section should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Lens platforms
-  TODO: Remove this comment before submitting
--->
+These are high level requirements for key interoperability aspects to be standardized. Architecture and technicalities needed to achieve it will have to be detailed separately once the principal decision to go forward is taken via this LIP.
+
+### Key functional requirements
+
+The Open Community Standard shall define all relevant details required for users to perform the following actions from any Lens app in an interoperable manner:
+
+- Create a Community
+- Manage Community settings
+- Delete a Community
+- View requirements to join a gated Community
+- Join a Community
+- Leave a Community
+- View and interact with both public and gated Community posts
+- Publish public or gated posts within a Community
+- Delete public or gated posts within a Community
+- Perform any other relevant Community related actions
+
+All the above should not bar apps from also supporting other types of Communities, including app gated ones.
 
 ## Rationale
 
-<!--
-  The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages.
-
-  The current placeholder is acceptable for a draft.
-
-  TODO: Remove this comment before submitting
--->
-
-TBD
+Implementing Communities as a new protocol level primitive could also be considered.
 
 ## Backwards Compatibility
 
-<!--
-
-  This section is optional.
-
-  All LIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The LIP must explain how the author proposes to deal with these incompatibilities. LIP submissions without a sufficient backwards compatibility treatise may be rejected outright.
-
-  The current placeholder is acceptable for a draft.
-
-  TODO: Remove this comment before submitting
--->
-
-No backward compatibility issues found.
+Slight social tensions might arise if several communities with overlapping topics will decide to transition to the new standard when it is implemented. That might be tricky for users, as they would have to figure out which one to choose.
 
 ## Security Considerations
-
-<!--
-  All LIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. For example, include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. LIP submissions missing the "Security Considerations" section will be rejected. An LIP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.
-
-  The current placeholder is acceptable for a draft.
-
-  TODO: Remove this comment before submitting
--->
 
 Needs discussion.
 
