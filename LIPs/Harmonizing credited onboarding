@@ -1,0 +1,36 @@
+---
+title: <Harmonizing credited onboarding>
+description: <Harmonizing credited onboarding to a standard of 8 Matic across Lens apps with fee sharing>
+author: <EzR3aL @DeFi_EzR3aL>
+status: Draft
+type: <Protocol>
+created: <date created on, 2024-03-04>
+---
+
+## Abstract
+
+<!--
+With the recent LIP5 Lens went permissionless and many Apps allowed user to join the ecosystem of Lens. To reduce bots and spamming a one time payment is needed to create a profile.
+
+-->
+
+## Motivation
+
+<!--
+The credited onboarding process has been implemented to mitigate the risk of potential bot spamming within the Lens platform. Presently, the prescribed fee by Lens stands at 8 Matic or 10 USD for transactions conducted in fiat currency (refer to https://docs.lens.xyz/docs/onboarding#credited-onboarding).
+It is worth noting that various applications, such as Hey and Tape, impose distinct fees for their respective onboarding processes. This divergence in fee structures underscores the individualized approaches adopted by different applications within the ecosystem.
+-->
+
+## Specification & Rationale
+
+<!--
+In order to maintain uniformity and equitable onboarding practices across the entire ecosystem, I propose a standardized fee for all applications built on the Lens platform. Specifically, I recommend that each app charges a uniform fee of 8 MATIC or 10 USD for fiat payments during the onboarding process.
+To foster the growth of the ecosystem and acknowledge the contributions of apps that consistently facilitate user onboarding, I further suggest implementing a fee-sharing mechanism. 
+Drawing inspiration from the approach outlined in Stanis's post (referenced here: https://hey.xyz/posts/0x05-0x221e-DA-8c3f8531), I propose a 50/50 split of the onboarding fee. Consequently, 50% of the fee would be directed towards the Lens treasury, supporting the broader sustainability of the platform, while the remaining 50% would be allocated to a wallet specified by the respective app. 
+This approach aims to incentivize and reward applications that actively contribute to the growth and engagement of users within the Lens ecosystem.
+-->
+
+
+## Copyright
+
+Copyright and related rights waived via CC0.
