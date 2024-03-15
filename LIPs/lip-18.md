@@ -51,7 +51,7 @@ The Lens community recognises the crucial role of community members in upholding
 
 In the initial framework, profiles identified by Gardeners as potential spam undergo the following process:
 
-- Flagged within the Lens API: These flags are reflected in the API and used by the Lens Integrity Working Group (composed of applications that have opted-in, such as Orb, Hey, Tape, T2, and Phaver). The API serves as an optional source of truth for spam filtering at the API level within these clients. Despite the flag, the content remains accessible permissionlessly in the database.
+- Flagged within the Lens API: These flags are reflected in the API and used by the Lens Integrity Working Group (composed of applications that have opted-in, such as Orb, Hey, Tape, T2). The API serves as an optional source of truth for spam filtering at the API level within these clients. Despite the flag, the content remains accessible permissionlessly in the database.
 
 - Filtered into machine learning (ML) tools: Tools developed by Avara (and trained based on these flags to enhance spam prevention measures) filter for applications (that have opted-in), thereby benefiting all users.
 
