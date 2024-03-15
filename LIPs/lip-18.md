@@ -14,7 +14,7 @@ The aim of Lens Protocol is to ensure an open, accessible, and innovative enviro
 ## Motivation
 
 This is the first framework to tackle spam within the Lens ecosystem, emphasizing a transparent community-centric approach. Acknowledging the early stage of web3 social and the unique characteristics and principles of the blockchain ethos, this proposal establishes an initial step and framework in an iterative process to address spam. It introduces "Gardeners" – or community members who flag and address spam, marking a proactive step towards a collaborative solution, which can evolve over time with community involvement.
-Several of Lens’ leading ecosystem applications, including Orb, Hey, Tape, T2, and Phaver have collectively committed and opted-in to setting an example by establishing the “Lens Integrity Working Group.” They will integrate the results of the Gardener’s initial collective spam mitigation framework into their operations, serving as the first testbeds to continually iterate the strategy over time in collaboration with the community.
+Several of Lens’ leading ecosystem applications, including Orb, Hey, Tape and T2 have collectively committed and opted-in to setting an example by establishing the “Lens Integrity Working Group.” They will integrate the results of the Gardener’s initial collective spam mitigation framework into their operations, serving as the first testbeds to continually iterate the strategy over time in collaboration with the community.
 
 Community labeling of suspected spam also empowers users to collectively identify and manage content that hurts the user experience.
 
