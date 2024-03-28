@@ -19,6 +19,10 @@ We have different types of proposals which currently are:
 
 All of these can go through an LIP process. Lens Open Algorithm Standards are the only ones that are not required to go through the LIP process as has its own flow. That said if you want to improve that standards an LIP can be opened for it.
 
+To open a new proposal idea: navigate to the "Discussions" tab -> create a new discussion under the "LIP Ideas" category.
+
+To submit a refined proposal for community review: fork this repository -> add a new file to the LIPs directory following the LIP template (`LIPs/lip-template.md`) -> commit this new file to the fork repository -> open a pull request back to this repository.
+
 ## Supported standards
 
 You can see all the supported standards which that are supported and shaped by LIPs [here](./supported-standards/README.md).
